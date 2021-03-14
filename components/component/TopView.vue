@@ -5,6 +5,7 @@
             <p>になったら</p>
             <v-text-field></v-text-field>
             <p>をする。</p>
+            <v-btn>新しい習慣を獲得する</v-btn>
         </div>
         <div class="area">
             <ul class="square">

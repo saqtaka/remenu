@@ -1,11 +1,11 @@
 <template>
     <div>
         <div>
-            <v-text-field></v-text-field>
+            <v-text-field class="relative"></v-text-field>
             <p>になったら</p>
-            <v-text-field></v-text-field>
+            <v-text-field class="relative"></v-text-field>
             <p>をする。</p>
-            <v-btn>新しい習慣を獲得する</v-btn>
+            <v-btn class="relative">新しい方法をで習慣を獲得する</v-btn>
         </div>
         <div class="area">
             <ul class="square">
@@ -25,6 +25,10 @@
 </template>
 
 <style scoped>
+    .relative {
+        position: relative;
+        z-index: 30;
+    }
     .area {
         /* background: #4e54c8; */
         /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8); */
@@ -39,6 +43,7 @@
         width: 100%;
         height: 100%;
         overflow: hidden;
+        z-index: 20;
     }
 
     .square li {

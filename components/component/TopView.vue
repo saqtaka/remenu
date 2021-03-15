@@ -2,9 +2,15 @@
     <div>
         <h1>re menu</h1>
         <div>
-            <v-text-field class="relative"></v-text-field>
+            <v-text-field
+              class="relative"
+              v-model="ifDisplayValue"
+              :loading=isIfLoading></v-text-field>
             <p>になったら</p>
-            <v-text-field class="relative"></v-text-field>
+            <v-text-field
+              class="relative"
+              v-model="thenDisplayValue"
+              :loading=isThenLoading></v-text-field>
             <p>をする。</p>
             <v-btn class="relative">新しい方法をで習慣を管理する</v-btn>
         </div>
@@ -24,6 +30,42 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      ifDisplayValue: 'ご飯を食べる前に',
+      thenDisplayValue: '腕立て伏せ',
+      isIfLoading: false,
+      isThenLoading: false,
+      count: 0
+    }
+  },
+  created () {
+    const setDisplay = () => {
+      if (this.count === 0) {
+        // if loading
+        this.isIfLoading = true
+        this.count = 1
+      } else if (this.count === 1) {
+        // if value change
+        this.isIfLoading = false
+        this.count = 2
+      } else if (this.count === 2) {
+        // then loading
+        this.isThenLoading = true
+        this.count = 3
+      } else if (this.count === 3) {
+        // then value change
+        this.isThenLoading = false
+        this.count = 0
+      }
+    }
+    setInterval(setDisplay, 3000)
+  }
+}
+</script>
 
 <style scoped>
     .relative {

@@ -1,11 +1,12 @@
 <template>
     <div>
+        <h1>re menu</h1>
         <div>
             <v-text-field class="relative"></v-text-field>
             <p>になったら</p>
             <v-text-field class="relative"></v-text-field>
             <p>をする。</p>
-            <v-btn class="relative">新しい方法をで習慣を獲得する</v-btn>
+            <v-btn class="relative">新しい方法をで習慣を管理する</v-btn>
         </div>
         <div class="area">
             <ul class="square">

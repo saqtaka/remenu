@@ -10,7 +10,7 @@
               class="relative"
               v-model="thenDisplayValue"
               :loading=isThenLoading></v-text-field>
-            <v-btn class="relative">新しい方法をで習慣を管理する</v-btn>
+            <v-btn class="relative">新しい方法で習慣を管理する</v-btn>
         </div>
         <div class="area">
             <ul class="square">

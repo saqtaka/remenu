@@ -6,12 +6,10 @@
               class="relative"
               v-model="ifDisplayValue"
               :loading=isIfLoading></v-text-field>
-            <p>になったら</p>
             <v-text-field
               class="relative"
               v-model="thenDisplayValue"
               :loading=isThenLoading></v-text-field>
-            <p>をする。</p>
             <v-btn class="relative">新しい方法をで習慣を管理する</v-btn>
         </div>
         <div class="area">
@@ -35,10 +33,34 @@
 export default {
   data () {
     return {
-      ifDisplayValue: 'ご飯を食べる前に',
-      thenDisplayValue: '腕立て伏せ',
+      ifDisplayValue: '',
+      thenDisplayValue: '',
       isIfLoading: false,
       isThenLoading: false,
+      ifArray: [
+        'ご飯を食べる前に',
+        '寝る前に',
+        '朝起きたら',
+        'お昼休憩に',
+        '買い物に行った後に',
+        '学校から帰ってきた',
+        '会社から帰ってきたら',
+        '夜、食器を洗ったら',
+        '子供が寝たら',
+        'Twitterを見たら'
+      ],
+      thenArray: [
+        '腕立て伏せを5回する',
+        'ストレッチを5分する',
+        '英単語を3つ覚える',
+        'サプリを飲む',
+        '本を1ページ読む',
+        '部屋を片づける',
+        'ニュースを読む',
+        'メールの返信をする',
+        'スクワットを10回する',
+        '10分勉強する'
+      ],
       count: 0
     }
   },
@@ -46,19 +68,23 @@ export default {
     const setDisplay = () => {
       if (this.count === 0) {
         // if loading
+        this.ifDisplayValue = ''
         this.isIfLoading = true
         this.count = 1
       } else if (this.count === 1) {
         // if value change
         this.isIfLoading = false
+        this.ifDisplayValue = this.ifArray[Math.floor(Math.random() * this.ifArray.length)]
         this.count = 2
       } else if (this.count === 2) {
         // then loading
+        this.thenDisplayValue = ''
         this.isThenLoading = true
         this.count = 3
       } else if (this.count === 3) {
         // then value change
         this.isThenLoading = false
+        this.thenDisplayValue = this.thenArray[Math.floor(Math.random() * this.thenArray.length)]
         this.count = 0
       }
     }

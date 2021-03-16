@@ -16,13 +16,13 @@
 import TopView from '~/components/component/TopView.vue'
 
 export default {
-  layout () {
-    return 'welcome'
-  },
   components: {
     // Logo,
     // VuetifyLogo,
     TopView
+  },
+  layout () {
+    return 'welcome'
   }
 }
 </script>

@@ -1,32 +1,55 @@
 <template>
+  <div>
+    <h1>re menu</h1>
     <div>
-        <h1>re menu</h1>
-        <div>
-            <v-text-field
-              class="relative"
-              v-model="ifDisplayValue"
-              :loading=isIfLoading></v-text-field>
-            <v-text-field
-              class="relative"
-              v-model="thenDisplayValue"
-              :loading=isThenLoading></v-text-field>
-            <v-btn class="relative">新しい方法で習慣を管理する</v-btn>
-        </div>
-        <div class="area">
-            <ul class="square">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
+      <v-text-field
+        v-model="ifDisplayValue"
+        class="relative"
+        :loading="isIfLoading"
+      />
+      <v-text-field
+        v-model="thenDisplayValue"
+        class="relative"
+        :loading="isThenLoading"
+      />
     </div>
+    <div>
+      <v-btn class="relative">
+        新しい方法で習慣を管理する
+      </v-btn>
+    </div>
+    <!-- <div>
+          <h3>re menuはif thenプランで習慣を管理できるWebアプリです。</h3>
+          <h4>if thenプランとは？</h4>
+          <p>「if then プラン」はもし「こういう状況になったら」、「こういう行動をとる」というのを自分の中に条件付けすることで、目標達成を促進する方法です。</p>
+          <p>例えば、</p>
+          <p>「お風呂に入る前に」、</p>
+          <p>「腕立て伏せをする」</p>
+          <p>というようにアクションをとる状況を事前に決めておくことで、行動を起こすことができる確率が大幅に上がります。</p>
+          <h4>if thenプランとは？</h4>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div> -->
+    <div class="area">
+      <ul class="square">
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>

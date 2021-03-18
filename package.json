@@ -12,9 +12,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxtjs/firebase": "^7.5.0",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "firebase": "^8.3.0",
+    "nuxt": "^2.14.12",
+    "nuxt-i18n": "^6.21.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",

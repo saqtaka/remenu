@@ -39,7 +39,7 @@
               {{ $t('agree') }}
             </div>
             <div>
-              <a href="https://ja.blog.tasbit.net/terms/">{{ $t('message.terms') }}</a> & <a href="https://ja.blog.tasbit.net/privacy/">{{ $t('message.privacy') }}</a>
+              <a href="https://ja.blog.tasbit.net/terms/">{{ $t('terms') }}</a> & <a href="https://ja.blog.tasbit.net/privacy/">{{ $t('privacy') }}</a>
             </div>
           </v-responsive>
         </div>

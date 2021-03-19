@@ -167,7 +167,8 @@ export default {
       measurementId: 'G-R95KFBRPB9'
     },
     services: {
-      auth: true // Just as example. Can be any other service.
+      auth: true,
+      firestore: true
     }
   },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

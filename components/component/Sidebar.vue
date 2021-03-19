@@ -160,13 +160,13 @@ export default {
     },
     items () {
       return [
-        { title: this.$t('message.inbox'), icon: 'mdi-home', link: '/inbox' },
-        { title: this.$t('message.task'), icon: 'mdi-check', link: '/task' },
-        { title: this.$t('message.habit'), icon: 'mdi-cached', link: '/habit' },
-        { title: this.$t('message.memo'), icon: 'mdi-book-open', link: '/memo' },
-        { title: this.$t('message.report'), icon: 'mdi-clipboard-text', link: '/report' },
-        { title: this.$t('message.setting'), icon: 'mdi-account-circle-outline', link: '/setting' },
-        { title: this.$t('message.license'), icon: 'mdi-information-outline', link: '/license' },
+        { title: this.$t('inbox'), icon: 'mdi-home', link: '/inbox' },
+        { title: this.$t('task'), icon: 'mdi-check', link: '/task' },
+        { title: this.$t('habit'), icon: 'mdi-cached', link: '/habit' },
+        { title: this.$t('memo'), icon: 'mdi-book-open', link: '/memo' },
+        { title: this.$t('report'), icon: 'mdi-clipboard-text', link: '/report' },
+        { title: this.$t('setting'), icon: 'mdi-account-circle-outline', link: '/setting' },
+        { title: this.$t('license'), icon: 'mdi-information-outline', link: '/license' },
         // {
         //   title: 'E-commerce',
         //   icon: 'mdi-cart',

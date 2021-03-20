@@ -1,117 +1,86 @@
 <template>
-  <v-app dark>
-    <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-    <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <!-- <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn> -->
-      <!-- <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>mdi-application</v-icon>
-      </v-btn> -->
-      <!-- <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>mdi-minus</v-icon>
-      </v-btn> -->
-      <v-toolbar-title v-text="title" />
-      <v-spacer />
-      <!-- <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>mdi-menu</v-icon>
-      </v-btn> -->
-    </v-app-bar>
-    <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
+  <v-app>
+    <Header v-if="isLogin" />
+    <Sidebar v-if="isLogin" />
+    <v-main class="content mx-0 mx-md-2">
+      <nuxt />
+      <Footer v-if="isLogin" />
     </v-main>
-    <!-- <v-navigation-drawer
-      v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
-    >
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light>
-              mdi-repeat
-            </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer> -->
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
   </v-app>
 </template>
 
 <script>
+import firebase from 'firebase/app'
+import Header from '~/components/component/Header'
+import Sidebar from '~/components/component/Sidebar'
+import Footer from '~/components/component/Footer'
+
+import getLocale from '~/javascript/GetLocale'
+// import initializeApp from '~/javascript/FBInitialize.js'
+import 'firebase/auth'
+
 export default {
+  name: 'Layout',
+  components:
+    {
+      Footer,
+      Header,
+      Sidebar
+    },
   data () {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 're menu'
+      isLogin: false
     }
+  },
+  created () {
+    // initializeApp()
+
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.isLogin = true
+
+        const self = this
+        getLocale(firebase.auth().currentUser.uid)
+          .then(function (value) {
+            self.$i18n.locale = value
+          })
+          .catch(function (error) {
+            console.error(error.message)
+          })
+
+        if (this.$route.path === '/signin' || this.$route.path === '/') {
+          this.$router.push({ path: '/inbox' })
+        }
+      } else {
+        this.isLogin = false
+
+        if (this.$route.path !== '/signin' && this.$route.path !== '/signup') {
+          this.$router.push({ path: '/signin' })
+        }
+      }
+    })
   }
 }
 </script>
+
+<style lang="scss">
+@import '@/styles/app.scss';
+
+body {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--v-greyTint-base);
+    border-radius: 36px;
+    border: none;
+  }
+}
+
+.v-main__wrap {
+  padding: 70px $content-padding $content-padding;
+}
+</style>

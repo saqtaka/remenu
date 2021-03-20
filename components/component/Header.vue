@@ -4,19 +4,26 @@
     class="main-header"
     height="64"
     fixed
-    color='primary'
-    dark>
+    color="primary"
+    dark
+  >
     <v-btn icon class="mx-1" @click.stop="TOGGLE_DRAWER">
       <template v-if="DRAWER_STATE">
-        <v-icon size="28" :class="$vuetify.theme.dark ? 'primary--text' : null">mdi-arrow-left</v-icon>
+        <v-icon size="28" :class="$vuetify.theme.dark ? 'primary--text' : null">
+          mdi-arrow-left
+        </v-icon>
       </template>
       <template v-else>
-        <v-icon size="28" :class="$vuetify.theme.dark ? 'primary--text' : null">mdi-menu</v-icon>
+        <v-icon size="28" :class="$vuetify.theme.dark ? 'primary--text' : null">
+          mdi-menu
+        </v-icon>
       </template>
     </v-btn>
     <img src="/img/icons/v-logo-small.png" alt="" height="30" class="mr-1">
-    <v-toolbar-title :class="$vuetify.theme.dark ? 'primary--text' : null">Tasbit</v-toolbar-title>
-    <v-spacer></v-spacer>
+    <v-toolbar-title :class="$vuetify.theme.dark ? 'primary--text' : null">
+      Tasbit
+    </v-toolbar-title>
+    <v-spacer />
 
     <v-menu
       min-width="180"
@@ -24,8 +31,7 @@
       bottom
       left
       nudge-bottom="10"
-    >
-    </v-menu>
+    />
   </v-app-bar>
 </template>
 

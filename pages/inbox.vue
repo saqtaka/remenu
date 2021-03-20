@@ -32,5 +32,8 @@ export default {
     InboxTaskList,
     InboxTaskListCompleted
   }
+  // layout () {
+  //   return 'Layout'
+  // }
 }
 </script>

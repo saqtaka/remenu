@@ -44,30 +44,30 @@ export default {
   watch: {
     sendMemo: {
       handler (newValue, oldValue) {
-        // const self = this
-        // firebase
-        //   .firestore()
-        //   .collection('memos')
-        //   .doc(this.sendMemo)
-        //   .get()
-        //   .then(function (doc) {
-        //     self.inputMemo = doc.data().memo
-        //   })
+        const self = this
+        firebase
+          .firestore()
+          .collection('memos')
+          .doc(this.sendMemo)
+          .get()
+          .then(function (doc) {
+            self.inputMemo = doc.data().memo
+          })
       },
       deep: true
     }
   },
   created () {
-    this.memoid = this.$route.params.memoid
-    const self = this
-    firebase
-      .firestore()
-      .collection('memos')
-      .doc(this.memoid)
-      .get()
-      .then(function (doc) {
-        self.inputMemo = doc.data().memo
-      })
+    // this.memoid = this.$route.params.memoid
+    // const self = this
+    // firebase
+    //   .firestore()
+    //   .collection('memos')
+    //   .doc(this.memoid)
+    //   .get()
+    //   .then(function (doc) {
+    //     self.inputMemo = doc.data().memo
+    //   })
   },
   methods: {
     saveMemo (e) {

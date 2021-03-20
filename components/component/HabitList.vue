@@ -39,7 +39,7 @@ export default {
     selectHabit (index) {
       this.selectedIndex = index
 
-      this.$router.push({ path: `habiteditor/${this.habits[index].id}` })
+      this.$router.push({ path: `habit/${this.habits[index].id}` })
     },
     displayTitle (text) {
       return text.split(/\n/)[0]

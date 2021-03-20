@@ -9,9 +9,11 @@
         justify="center"
       >
         <v-col
+          cols="12"
           class="text-center"
         >
-          <DailyReport />
+          <LicenseInfo />
+          <!-- <SelectLocale></SelectLocale> -->
         </v-col>
       </v-row>
     </v-container>
@@ -19,12 +21,14 @@
 </template>
 
 <script>
-import DailyReport from '@/components/component/DailyReport.vue'
+// import SelectLocale from '@/components/basic/SelectLocale.vue'
+
+import LicenseInfo from '@/components/component/LicenseInfo'
 
 export default {
-  name: 'ReportPage',
+  name: 'SettingPage',
   components: {
-    DailyReport
+    LicenseInfo
   }
 }
 </script>

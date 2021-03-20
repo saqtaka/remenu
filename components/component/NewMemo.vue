@@ -11,10 +11,10 @@
           <v-text-field
             v-model="inputMemo"
             :rules="inputMemoRules"
-            :label="this.$t('new_memo')"
+            :label="$t('new_memo')"
             required
-            validate-on-blur="true"
-            clearable="true"
+            validate-on-blur
+            clearable
           />
         </v-form>
       </v-card-text>

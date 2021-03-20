@@ -39,7 +39,12 @@ export default {
     InputTaskDeadline,
     InputTaskTimeRequired
   },
-  props: ['sendTask'],
+  props: {
+    sendTask: {
+      type: String,
+      default: ''
+    }
+  },
   data () {
     return {
       selectedTask:
@@ -57,74 +62,66 @@ export default {
   watch: {
     sendTask: {
       handler (newValue, oldValue) {
-        // console.log('test')
-        // console.log(this.sendTask)
-        // const self = this
-        // firebase
-        //   .firestore()
-        //   .collection('tasks')
-        //   .doc(this.sendTask)
-        //   .get()
-        //   .then(function (doc) {
-        //     self.selectedTask.title = doc.data().name
-        //     self.selectedTask.date = doc.data().date
+        const self = this
+        firebase
+          .firestore()
+          .collection('tasks')
+          .doc(this.sendTask)
+          .get()
+          .then(function (doc) {
+            self.selectedTask.title = doc.data().name
+            self.selectedTask.date = doc.data().date
 
-        //     let dateTemp
-        //     let y
-        //     let m
-        //     let d
-        //     if (self.selectedTask.date) {
-        //       dateTemp = new Date(self.selectedTask.date.toDate())
+            let dateTemp
+            let y
+            let m
+            let d
+            if (self.selectedTask.date) {
+              dateTemp = new Date(self.selectedTask.date.toDate())
 
-        //       // var today = new Date()
-        //       y = dateTemp.getFullYear()
-        //       m = ('00' + (dateTemp.getMonth() + 1)).slice(-2)
-        //       d = ('00' + dateTemp.getDate()).slice(-2)
-        //     }
+              // var today = new Date()
+              y = dateTemp.getFullYear()
+              m = ('00' + (dateTemp.getMonth() + 1)).slice(-2)
+              d = ('00' + dateTemp.getDate()).slice(-2)
+            }
 
-        //     self.selectedTask.dateForDisplay = dateTemp ? y + '-' + m + '-' + d : null
-        //     self.selectedTask.timeRequired = doc.data().timeRequired
-        //     self.selectedTask.memo = doc.data().memo
-        //   })
+            self.selectedTask.dateForDisplay = dateTemp ? y + '-' + m + '-' + d : null
+            self.selectedTask.timeRequired = doc.data().timeRequired
+            self.selectedTask.memo = doc.data().memo
+          })
       },
       deep: true
-    },
-    selectedTask: {
-      handler (newValue, oldValue) {
-        console.log(newValue)
-        console.log(oldValue)
-      }
     }
   },
   created () {
-    this.taskid = this.$route.params.taskid
-    const self = this
-    firebase
-      .firestore()
-      .collection('tasks')
-      .doc(this.taskid)
-      .get()
-      .then(function (doc) {
-        self.selectedTask.title = doc.data().name
-        self.selectedTask.date = doc.data().date
+    // this.taskid = this.$route.params.taskid
+    // const self = this
+    // firebase
+    //   .firestore()
+    //   .collection('tasks')
+    //   .doc(this.taskid)
+    //   .get()
+    //   .then(function (doc) {
+    //     self.selectedTask.title = doc.data().name
+    //     self.selectedTask.date = doc.data().date
 
-        let dateTemp
-        let y
-        let m
-        let d
-        if (self.selectedTask.date) {
-          dateTemp = new Date(self.selectedTask.date.toDate())
+    //     let dateTemp
+    //     let y
+    //     let m
+    //     let d
+    //     if (self.selectedTask.date) {
+    //       dateTemp = new Date(self.selectedTask.date.toDate())
 
-          // var today = new Date()
-          y = dateTemp.getFullYear()
-          m = ('00' + (dateTemp.getMonth() + 1)).slice(-2)
-          d = ('00' + dateTemp.getDate()).slice(-2)
-        }
+    //       // var today = new Date()
+    //       y = dateTemp.getFullYear()
+    //       m = ('00' + (dateTemp.getMonth() + 1)).slice(-2)
+    //       d = ('00' + dateTemp.getDate()).slice(-2)
+    //     }
 
-        self.selectedTask.dateForDisplay = dateTemp ? y + '-' + m + '-' + d : null
-        self.selectedTask.timeRequired = doc.data().timeRequired
-        self.selectedTask.memo = doc.data().memo
-      })
+    //     self.selectedTask.dateForDisplay = dateTemp ? y + '-' + m + '-' + d : null
+    //     self.selectedTask.timeRequired = doc.data().timeRequired
+    //     self.selectedTask.memo = doc.data().memo
+    //   })
   },
   // created: function () {
   //   $(function () {
@@ -154,9 +151,6 @@ export default {
         .then(function () {
           // self.$router.push({ path: '/task' })
           self.$router.go(-1)
-        })
-        .catch(function (error) {
-          console.error(error.message)
         })
     }
   }

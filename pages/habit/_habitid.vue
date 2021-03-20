@@ -13,12 +13,11 @@
         >
           <v-card>
             <v-card-text>
-              <MemoEditForm :send-memo="inputMemo" />
+              <HabitEditForm :send-habit="inputHabit" />
             </v-card-text>
           </v-card>
-
           <div class="my-4">
-            <MemoDelete :get-memo="inputMemo" />
+            <HabitDelete :get-habit="inputHabit" />
           </div>
         </v-col>
       </v-row>
@@ -27,24 +26,29 @@
 </template>
 
 <script>
-import MemoEditForm from '@/components/component/MemoEditForm.vue'
-import MemoDelete from '@/components/component/MemoDelete.vue'
+import HabitEditForm from '@/components/component/HabitEditForm.vue'
+import HabitDelete from '@/components/component/HabitDelete.vue'
 
 export default {
-  name: 'MemoEditorPage',
+  name: 'HabitEditorPage',
   components: {
-    MemoEditForm,
-    MemoDelete
+    HabitEditForm,
+    HabitDelete
   },
-  props: ['memoId'],
+  props: {
+    habitId: {
+      type: String,
+      default: ''
+    }
+  },
   data () {
     return {
-      // relayMemo: null,
-      inputMemo: ''
+      inputHabit: ''
     }
   },
   mounted () {
-    this.inputMemo = this.memoId
+    // this.inputHabit = this.habitId
+    this.inputHabit = this.$route.params.habitid
   }
 }
 </script>

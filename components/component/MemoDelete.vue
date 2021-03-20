@@ -12,7 +12,6 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 
 export default {
-  name: 'MemoList',
   components: {
     DeleteButton
   },

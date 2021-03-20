@@ -1,0 +1,654 @@
+{
+    "@firebase/analytics-types@0.3.1": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/analytics-types",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/analytics-types/README.md"
+    },
+    "@firebase/analytics@0.4.1": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/analytics",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/analytics/README.md"
+    },
+    "@firebase/app-types@0.6.1": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/app-types",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/app-types/README.md"
+    },
+    "@firebase/app@0.6.9": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/app",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/app/README.md"
+    },
+    "@firebase/auth-interop-types@0.1.5": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/auth-interop-types",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/auth-interop-types/README.md"
+    },
+    "@firebase/auth-types@0.10.1": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/auth-types",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/auth-types/README.md"
+    },
+    "@firebase/auth@0.14.9": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/auth",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/auth/LICENSE"
+    },
+    "@firebase/component@0.1.17": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/component",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/component/README.md"
+    },
+    "@firebase/database-types@0.5.1": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/database-types",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/database-types/README.md"
+    },
+    "@firebase/database@0.6.9": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/database",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/database/README.md"
+    },
+    "@firebase/firestore-types@1.12.0": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/firestore-types",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/firestore-types/README.md"
+    },
+    "@firebase/firestore@1.16.2": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/firestore",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/firestore/README.md"
+    },
+    "@firebase/functions-types@0.3.17": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/functions-types",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/functions-types/README.md"
+    },
+    "@firebase/functions@0.4.49": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/functions",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/functions/README.md"
+    },
+    "@firebase/installations-types@0.3.4": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/installations-types"
+    },
+    "@firebase/installations@0.4.15": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/installations"
+    },
+    "@firebase/logger@0.2.6": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/logger",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/logger/README.md"
+    },
+    "@firebase/messaging-types@0.4.5": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/messaging-types",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/messaging-types/README.md"
+    },
+    "@firebase/messaging@0.6.21": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/messaging",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/messaging/README.md"
+    },
+    "@firebase/performance-types@0.0.13": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/performance-types"
+    },
+    "@firebase/performance@0.3.10": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/performance",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/performance/README.md"
+    },
+    "@firebase/polyfill@0.3.36": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/polyfill",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/polyfill/README.md"
+    },
+    "@firebase/remote-config-types@0.1.9": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/remote-config-types",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/remote-config-types/README.md"
+    },
+    "@firebase/remote-config@0.1.26": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/remote-config",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/remote-config/README.md"
+    },
+    "@firebase/storage-types@0.3.13": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/storage-types",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/storage-types/README.md"
+    },
+    "@firebase/storage@0.3.41": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/storage",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/storage/README.md"
+    },
+    "@firebase/util@0.3.0": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/util",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/util/README.md"
+    },
+    "@firebase/webchannel-wrapper@0.2.41": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/webchannel-wrapper",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/webchannel-wrapper/README.md"
+    },
+    "@grpc/grpc-js@1.1.3": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/grpc/grpc-node/tree/master/packages/grpc-js",
+      "publisher": "Google Inc.",
+      "path": "/Users/t/source/tasbit/node_modules/@grpc/grpc-js",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@grpc/grpc-js/LICENSE"
+    },
+    "@grpc/proto-loader@0.5.5": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/grpc/grpc-node",
+      "publisher": "Google Inc.",
+      "path": "/Users/t/source/tasbit/node_modules/@grpc/proto-loader",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@grpc/proto-loader/LICENSE"
+    },
+    "@protobufjs/aspromise@1.1.2": {
+      "licenses": "BSD-3-Clause",
+      "repository": "https://github.com/dcodeIO/protobuf.js",
+      "publisher": "Daniel Wirtz",
+      "email": "dcode+protobufjs@dcode.io",
+      "path": "/Users/t/source/tasbit/node_modules/@protobufjs/aspromise",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@protobufjs/aspromise/LICENSE"
+    },
+    "@protobufjs/base64@1.1.2": {
+      "licenses": "BSD-3-Clause",
+      "repository": "https://github.com/dcodeIO/protobuf.js",
+      "publisher": "Daniel Wirtz",
+      "email": "dcode+protobufjs@dcode.io",
+      "path": "/Users/t/source/tasbit/node_modules/@protobufjs/base64",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@protobufjs/base64/LICENSE"
+    },
+    "@protobufjs/codegen@2.0.4": {
+      "licenses": "BSD-3-Clause",
+      "repository": "https://github.com/dcodeIO/protobuf.js",
+      "publisher": "Daniel Wirtz",
+      "email": "dcode+protobufjs@dcode.io",
+      "path": "/Users/t/source/tasbit/node_modules/@protobufjs/codegen",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@protobufjs/codegen/LICENSE"
+    },
+    "@protobufjs/eventemitter@1.1.0": {
+      "licenses": "BSD-3-Clause",
+      "repository": "https://github.com/dcodeIO/protobuf.js",
+      "publisher": "Daniel Wirtz",
+      "email": "dcode+protobufjs@dcode.io",
+      "path": "/Users/t/source/tasbit/node_modules/@protobufjs/eventemitter",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@protobufjs/eventemitter/LICENSE"
+    },
+    "@protobufjs/fetch@1.1.0": {
+      "licenses": "BSD-3-Clause",
+      "repository": "https://github.com/dcodeIO/protobuf.js",
+      "publisher": "Daniel Wirtz",
+      "email": "dcode+protobufjs@dcode.io",
+      "path": "/Users/t/source/tasbit/node_modules/@protobufjs/fetch",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@protobufjs/fetch/LICENSE"
+    },
+    "@protobufjs/float@1.0.2": {
+      "licenses": "BSD-3-Clause",
+      "repository": "https://github.com/dcodeIO/protobuf.js",
+      "publisher": "Daniel Wirtz",
+      "email": "dcode+protobufjs@dcode.io",
+      "path": "/Users/t/source/tasbit/node_modules/@protobufjs/float",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@protobufjs/float/LICENSE"
+    },
+    "@protobufjs/inquire@1.1.0": {
+      "licenses": "BSD-3-Clause",
+      "repository": "https://github.com/dcodeIO/protobuf.js",
+      "publisher": "Daniel Wirtz",
+      "email": "dcode+protobufjs@dcode.io",
+      "path": "/Users/t/source/tasbit/node_modules/@protobufjs/inquire",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@protobufjs/inquire/LICENSE"
+    },
+    "@protobufjs/path@1.1.2": {
+      "licenses": "BSD-3-Clause",
+      "repository": "https://github.com/dcodeIO/protobuf.js",
+      "publisher": "Daniel Wirtz",
+      "email": "dcode+protobufjs@dcode.io",
+      "path": "/Users/t/source/tasbit/node_modules/@protobufjs/path",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@protobufjs/path/LICENSE"
+    },
+    "@protobufjs/pool@1.1.0": {
+      "licenses": "BSD-3-Clause",
+      "repository": "https://github.com/dcodeIO/protobuf.js",
+      "publisher": "Daniel Wirtz",
+      "email": "dcode+protobufjs@dcode.io",
+      "path": "/Users/t/source/tasbit/node_modules/@protobufjs/pool",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@protobufjs/pool/LICENSE"
+    },
+    "@protobufjs/utf8@1.1.0": {
+      "licenses": "BSD-3-Clause",
+      "repository": "https://github.com/dcodeIO/protobuf.js",
+      "publisher": "Daniel Wirtz",
+      "email": "dcode+protobufjs@dcode.io",
+      "path": "/Users/t/source/tasbit/node_modules/@protobufjs/utf8",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@protobufjs/utf8/LICENSE"
+    },
+    "@types/long@4.0.1": {
+      "licenses": "MIT",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+      "path": "/Users/t/source/tasbit/node_modules/@types/long",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@types/long/LICENSE"
+    },
+    "@types/node@13.13.15": {
+      "licenses": "MIT",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+      "path": "/Users/t/source/tasbit/node_modules/protobufjs/node_modules/@types/node",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/protobufjs/node_modules/@types/node/LICENSE"
+    },
+    "core-js@3.6.5": {
+      "licenses": "MIT",
+      "repository": "https://github.com/zloirock/core-js",
+      "path": "/Users/t/source/tasbit/node_modules/core-js",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/core-js/LICENSE"
+    },
+    "dialog-polyfill@0.4.10": {
+      "licenses": "BSD*",
+      "repository": "https://github.com/GoogleChrome/dialog-polyfill",
+      "publisher": "The Chromium Authors",
+      "path": "/Users/t/source/tasbit/node_modules/dialog-polyfill",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/dialog-polyfill/LICENSE"
+    },
+    "dom-storage@2.1.0": {
+      "licenses": "MIT*",
+      "repository": "git://git.coolaj86.com/coolaj86/dom-storage.js",
+      "publisher": "AJ ONeal",
+      "email": "coolaj86@gmail.com",
+      "url": "https://coolaj86.com",
+      "path": "/Users/t/source/tasbit/node_modules/dom-storage",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/dom-storage/LICENSE"
+    },
+    "encoding@0.1.13": {
+      "licenses": "MIT",
+      "repository": "https://github.com/andris9/encoding",
+      "publisher": "Andris Reinman",
+      "path": "/Users/t/source/tasbit/node_modules/encoding",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/encoding/LICENSE"
+    },
+    "faye-websocket@0.11.3": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/faye/faye-websocket-node",
+      "publisher": "James Coglan",
+      "email": "jcoglan@gmail.com",
+      "url": "http://jcoglan.com/",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/database/node_modules/faye-websocket",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/database/node_modules/faye-websocket/LICENSE.md"
+    },
+    "firebase@7.17.1": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebase-js-sdk",
+      "publisher": "Firebase",
+      "email": "firebase-support@google.com",
+      "url": "https://firebase.google.com/",
+      "path": "/Users/t/source/tasbit/node_modules/firebase",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/firebase/README.md"
+    },
+    "firebaseui@4.6.1": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/firebase/firebaseui-web",
+      "publisher": "Google",
+      "path": "/Users/t/source/tasbit/node_modules/firebaseui",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/firebaseui/LICENSE"
+    },
+    "iconv-lite@0.6.2": {
+      "licenses": "MIT",
+      "repository": "https://github.com/ashtuchkin/iconv-lite",
+      "publisher": "Alexander Shtuchkin",
+      "email": "ashtuchkin@gmail.com",
+      "path": "/Users/t/source/tasbit/node_modules/encoding/node_modules/iconv-lite",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/encoding/node_modules/iconv-lite/LICENSE"
+    },
+    "idb@3.0.2": {
+      "licenses": "ISC",
+      "repository": "https://github.com/jakearchibald/indexeddb-promised",
+      "publisher": "Jake Archibald",
+      "path": "/Users/t/source/tasbit/node_modules/idb",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/idb/LICENSE"
+    },
+    "is-stream@1.1.0": {
+      "licenses": "MIT",
+      "repository": "https://github.com/sindresorhus/is-stream",
+      "publisher": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "url": "sindresorhus.com",
+      "path": "/Users/t/source/tasbit/node_modules/is-stream",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/is-stream/license"
+    },
+    "isomorphic-fetch@2.2.1": {
+      "licenses": "MIT",
+      "repository": "https://github.com/matthew-andrews/isomorphic-fetch",
+      "publisher": "Matt Andrews",
+      "email": "matt@mattandre.ws",
+      "path": "/Users/t/source/tasbit/node_modules/isomorphic-fetch",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/isomorphic-fetch/LICENSE"
+    },
+    "jquery-ui@1.12.1": {
+      "licenses": "MIT",
+      "repository": "https://github.com/jquery/jquery-ui",
+      "publisher": "jQuery Foundation and other contributors",
+      "url": "https://github.com/jquery/jquery-ui/blob/1.12.1/AUTHORS.txt",
+      "path": "/Users/t/source/tasbit/node_modules/jquery-ui",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/jquery-ui/LICENSE.txt"
+    },
+    "jquery@3.5.1": {
+      "licenses": "MIT",
+      "repository": "https://github.com/jquery/jquery",
+      "publisher": "JS Foundation and other contributors",
+      "url": "https://github.com/jquery/jquery/blob/3.5.1/AUTHORS.txt",
+      "path": "/Users/t/source/tasbit/node_modules/jquery",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/jquery/LICENSE.txt"
+    },
+    "lodash.camelcase@4.3.0": {
+      "licenses": "MIT",
+      "repository": "https://github.com/lodash/lodash",
+      "publisher": "John-David Dalton",
+      "email": "john.david.dalton@gmail.com",
+      "url": "http://allyoucanleet.com/",
+      "path": "/Users/t/source/tasbit/node_modules/lodash.camelcase",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/lodash.camelcase/LICENSE"
+    },
+    "long@4.0.0": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/dcodeIO/long.js",
+      "publisher": "Daniel Wirtz",
+      "email": "dcode@dcode.io",
+      "path": "/Users/t/source/tasbit/node_modules/long",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/long/LICENSE"
+    },
+    "make-plural@4.3.0": {
+      "licenses": "ISC",
+      "repository": "https://github.com/eemeli/make-plural",
+      "publisher": "Eemeli Aro",
+      "email": "eemeli@gmail.com",
+      "path": "/Users/t/source/tasbit/node_modules/make-plural",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/make-plural/LICENSE"
+    },
+    "material-design-lite@1.3.0": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/google/material-design-lite",
+      "publisher": "Google",
+      "path": "/Users/t/source/tasbit/node_modules/material-design-lite",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/material-design-lite/LICENSE"
+    },
+    "messageformat-formatters@2.0.1": {
+      "licenses": "MIT",
+      "repository": "https://github.com/messageformat/messageformat",
+      "publisher": "Eemeli Aro",
+      "email": "eemeli@gmail.com",
+      "path": "/Users/t/source/tasbit/node_modules/messageformat-formatters",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/messageformat-formatters/LICENSE"
+    },
+    "messageformat-parser@4.1.3": {
+      "licenses": "MIT",
+      "repository": "https://github.com/messageformat/messageformat",
+      "path": "/Users/t/source/tasbit/node_modules/messageformat-parser",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/messageformat-parser/LICENSE"
+    },
+    "messageformat@2.3.0": {
+      "licenses": "MIT",
+      "repository": "https://github.com/messageformat/messageformat",
+      "publisher": "Alex Sexton",
+      "email": "alexsexton@gmail.com",
+      "path": "/Users/t/source/tasbit/node_modules/messageformat",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/messageformat/LICENSE"
+    },
+    "minimist@1.2.5": {
+      "licenses": "MIT",
+      "repository": "https://github.com/substack/minimist",
+      "publisher": "James Halliday",
+      "email": "mail@substack.net",
+      "url": "http://substack.net",
+      "path": "/Users/t/source/tasbit/node_modules/minimist",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/minimist/LICENSE"
+    },
+    "node-fetch@1.7.3": {
+      "licenses": "MIT",
+      "repository": "https://github.com/bitinn/node-fetch",
+      "publisher": "David Frank",
+      "path": "/Users/t/source/tasbit/node_modules/node-fetch",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/node-fetch/LICENSE.md"
+    },
+    "promise-polyfill@8.1.3": {
+      "licenses": "MIT",
+      "repository": "https://github.com/taylorhakes/promise-polyfill",
+      "publisher": "Taylor Hakes",
+      "path": "/Users/t/source/tasbit/node_modules/promise-polyfill",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/promise-polyfill/LICENSE"
+    },
+    "protobufjs@6.10.1": {
+      "licenses": "BSD-3-Clause",
+      "repository": "https://github.com/protobufjs/protobuf.js",
+      "publisher": "Daniel Wirtz",
+      "email": "dcode+protobufjs@dcode.io",
+      "path": "/Users/t/source/tasbit/node_modules/protobufjs",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/protobufjs/LICENSE"
+    },
+    "register-service-worker@1.7.1": {
+      "licenses": "MIT",
+      "repository": "https://github.com/yyx990803/register-service-worker",
+      "publisher": "Evan You",
+      "path": "/Users/t/source/tasbit/node_modules/register-service-worker",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/register-service-worker/LICENSE"
+    },
+    "safer-buffer@2.1.2": {
+      "licenses": "MIT",
+      "repository": "https://github.com/ChALkeR/safer-buffer",
+      "publisher": "Nikita Skovoroda",
+      "email": "chalkerx@gmail.com",
+      "url": "https://github.com/ChALkeR",
+      "path": "/Users/t/source/tasbit/node_modules/safer-buffer",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/safer-buffer/LICENSE"
+    },
+    "semver@6.3.0": {
+      "licenses": "ISC",
+      "repository": "https://github.com/npm/node-semver",
+      "path": "/Users/t/source/tasbit/node_modules/@grpc/grpc-js/node_modules/semver",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@grpc/grpc-js/node_modules/semver/LICENSE"
+    },
+    "tasbit@0.1.0": {
+      "licenses": "UNLICENSED",
+      "private": true,
+      "path": "/Users/t/source/tasbit",
+      "licenseFile": "/Users/t/source/tasbit/license.json"
+    },
+    "tslib@1.13.0": {
+      "licenses": "0BSD",
+      "repository": "https://github.com/Microsoft/tslib",
+      "publisher": "Microsoft Corp.",
+      "path": "/Users/t/source/tasbit/node_modules/tslib",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/tslib/LICENSE.txt"
+    },
+    "vue-i18n@8.22.2": {
+      "licenses": "MIT",
+      "repository": "https://github.com/kazupon/vue-i18n",
+      "publisher": "kazuya kawaguchi",
+      "email": "kawakazu80@gmail.com",
+      "path": "/Users/t/source/tasbit/node_modules/vue-i18n",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/vue-i18n/LICENSE"
+    },
+    "vue-router@3.3.4": {
+      "licenses": "MIT",
+      "repository": "https://github.com/vuejs/vue-router",
+      "publisher": "Evan You",
+      "path": "/Users/t/source/tasbit/node_modules/vue-router",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/vue-router/LICENSE"
+    },
+    "vue@2.6.11": {
+      "licenses": "MIT",
+      "repository": "https://github.com/vuejs/vue",
+      "publisher": "Evan You",
+      "path": "/Users/t/source/tasbit/node_modules/vue",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/vue/LICENSE"
+    },
+    "vuetify@2.3.10": {
+      "licenses": "MIT",
+      "repository": "https://github.com/vuetifyjs/vuetify",
+      "publisher": "John Leider",
+      "email": "john@vuetifyjs.com",
+      "path": "/Users/t/source/tasbit/node_modules/vuetify",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/vuetify/LICENSE.md"
+    },
+    "vuex@3.6.0": {
+      "licenses": "MIT",
+      "repository": "https://github.com/vuejs/vuex",
+      "publisher": "Evan You",
+      "path": "/Users/t/source/tasbit/node_modules/vuex",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/vuex/LICENSE"
+    },
+    "websocket-driver@0.6.5": {
+      "licenses": "MIT",
+      "repository": "https://github.com/faye/websocket-driver-node",
+      "publisher": "James Coglan",
+      "email": "jcoglan@gmail.com",
+      "url": "http://jcoglan.com/",
+      "path": "/Users/t/source/tasbit/node_modules/websocket-driver",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/websocket-driver/README.md"
+    },
+    "websocket-extensions@0.1.4": {
+      "licenses": "Apache-2.0",
+      "repository": "https://github.com/faye/websocket-extensions-node",
+      "publisher": "James Coglan",
+      "email": "jcoglan@gmail.com",
+      "url": "http://jcoglan.com/",
+      "path": "/Users/t/source/tasbit/node_modules/websocket-extensions",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/websocket-extensions/LICENSE.md"
+    },
+    "whatwg-fetch@2.0.4": {
+      "licenses": "MIT",
+      "repository": "https://github.com/github/fetch",
+      "path": "/Users/t/source/tasbit/node_modules/@firebase/polyfill/node_modules/whatwg-fetch",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/@firebase/polyfill/node_modules/whatwg-fetch/LICENSE"
+    },
+    "whatwg-fetch@3.3.1": {
+      "licenses": "MIT",
+      "repository": "https://github.com/github/fetch",
+      "path": "/Users/t/source/tasbit/node_modules/whatwg-fetch",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/whatwg-fetch/LICENSE"
+    },
+    "xmlhttprequest@1.8.0": {
+      "licenses": "MIT",
+      "repository": "https://github.com/driverdan/node-XMLHttpRequest",
+      "publisher": "Dan DeFelippi",
+      "url": "http://driverdan.com",
+      "path": "/Users/t/source/tasbit/node_modules/xmlhttprequest",
+      "licenseFile": "/Users/t/source/tasbit/node_modules/xmlhttprequest/LICENSE"
+    }
+}

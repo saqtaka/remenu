@@ -35,6 +35,13 @@ export default {
   created () {
     // initializeApp()
 
+    // set locale
+    // if (this.$route.query.lang === 'ja') {
+    //   this.$i18n.locale = 'ja-JP'
+    // } else if (this.$route.query.lang === 'en') {
+    //   this.$i18n.locale = 'en-US'
+    // }
+
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         this.isLogin = true

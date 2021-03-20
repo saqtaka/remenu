@@ -61,7 +61,7 @@ export default {
     selectMemo (index) {
       this.selectedIndex = index
 
-      this.$router.push({ path: `memoeditor/${this.memos[index].id}` })
+      this.$router.push({ path: `memo/${this.memos[index].id}` })
     }
   }
 }

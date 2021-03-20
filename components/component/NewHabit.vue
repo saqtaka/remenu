@@ -11,10 +11,10 @@
           <v-text-field
             v-model="inputHabit"
             :rules="inputHabitRules"
-            :label="this.$t('new_habit')"
+            :label="$t('new_habit')"
             required
-            validate-on-blur="true"
-            clearable="true"
+            validate-on-blur
+            clearable
           />
         </v-form>
       </v-card-text>

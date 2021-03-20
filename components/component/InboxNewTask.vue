@@ -11,10 +11,10 @@
           <v-text-field
             v-model="inputTask"
             :rules="inputTaskRules"
-            :label="this.$t('new_inbox')"
+            :label="$t('new_inbox')"
             required
-            validate-on-blur="true"
-            clearable="true"
+            validate-on-blur
+            clearable
           />
         </v-form>
       </v-card-text>

@@ -71,7 +71,6 @@ export default {
     }
   },
   created (e) {
-    console.log(this.$route.query.lang)
     if (this.$route.query.lang === 'ja') {
       this.$i18n.locale = 'ja-JP'
     } else if (this.$route.query.lang === 'en') {
@@ -82,7 +81,6 @@ export default {
   methods: {
     SignIn () {
       try {
-        console.log(this.password)
         this.$fire.auth.signInWithEmailAndPassword(this.emailAddress, this.password)
           .then((user) => {
             this.$router.push({ path: '/inbox' })

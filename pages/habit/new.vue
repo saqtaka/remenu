@@ -35,14 +35,20 @@ export default {
     HabitEditForm,
     HabitDelete
   },
-  props: ['habitId'],
+  props: {
+    habitId: {
+      type: String,
+      default: ''
+    }
+  },
   data () {
     return {
       inputHabit: ''
     }
   },
   mounted () {
-    this.inputHabit = this.habitId
+    // this.inputHabit = this.habitId
+    this.inputHabit = this.$route.params.habitid
   }
 }
 </script>

@@ -30,19 +30,24 @@ import TaskEditForm from '~/components/component/TaskEditForm.vue'
 import TaskDelete from '~/components/component/TaskDelete.vue'
 
 export default {
-  name: 'TaskEditorPage',
   components: {
     TaskEditForm,
     TaskDelete
   },
-  props: ['taskId'],
+  props: {
+    taskId: {
+      type: String,
+      default: ''
+    }
+  },
   data () {
     return {
       inputTask: ''
     }
   },
   mounted () {
-    this.inputTask = this.taskId
+    // this.inputTask = this.taskId
+    this.inputTask = this.$route.params.taskid
   }
 }
 </script>

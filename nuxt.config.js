@@ -187,7 +187,8 @@ export default {
           success: colors.green.accent3
         }
       }
-    }
+    },
+    defaultAssets: false
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

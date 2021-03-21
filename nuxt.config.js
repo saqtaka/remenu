@@ -198,7 +198,7 @@ export default {
         cacheGroups: {
           styles: {
             name: 'styles',
-            minChunks: 5,
+            minChunks: 2,
             chunks: 'all',
             enforce: false,
             minSize: 30000,

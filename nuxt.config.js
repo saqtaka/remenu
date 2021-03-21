@@ -194,14 +194,16 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     optimization: {
-      cacheGroups: {
-        styles: {
-          name: 'styles',
-          minChunks: 5,
-          chunks: 'all',
-          enforce: false,
-          minSize: 30000,
-          maxSize: 1000000
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            minChunks: 5,
+            chunks: 'all',
+            enforce: false,
+            minSize: 30000,
+            maxSize: 1000000
+          }
         }
       }
     }

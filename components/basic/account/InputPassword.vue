@@ -8,7 +8,7 @@
       :type="show ? 'text' : 'password'"
       required
       :value="password"
-      :append-icon="show ? 'mdi-eye' : 'mdi-eye-off'"
+      :append-icon="show ? mdiEyeSvgPath : mdiEyeOffSvgPath"
       @change="sendData"
       @click:append="show = !show"
     />
@@ -16,6 +16,9 @@
 </template>
 
 <script>
+import { mdiEye } from '@mdi/js'
+import { mdiEyeOff } from '@mdi/js'
+
 export default {
   model: {
     prop: 'passwordProp',
@@ -34,7 +37,9 @@ export default {
         v => !!v || this.$t('error_require'),
         v => (v && v.length <= 100) || this.$t('error_inputCount', { num: '100' })
       ],
-      show: false
+      show: false,
+      mdiEyeSvgPath: mdiEye,
+      mdiEyeOffSvgPath: mdiEyeOff
     }
   },
   watch: {

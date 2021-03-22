@@ -11,7 +11,7 @@
       <template #activator="{ on, attrs }">
         <v-text-field
           v-model="taskDeadline"
-          prepend-icon="mdi-calendar"
+          :prepend-icon="mdiCalendarSvgPath"
           v-bind="attrs"
           readonly
           v-on="on"
@@ -29,6 +29,7 @@
 <script>
 // import $ from 'jquery'
 // import 'jquery-ui/ui/widgets/datepicker'
+import { mdiCalendar } from '@mdi/js'
 
 export default {
   model: {
@@ -44,7 +45,8 @@ export default {
   data () {
     return {
       taskDeadline: this.taskDeadlineProp,
-      menu: false
+      menu: false,
+      mdiCalendarSvgPath: mdiCalendar
     }
   },
   watch: {

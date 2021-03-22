@@ -188,7 +188,10 @@ export default {
         }
       }
     },
-    defaultAssets: false
+    defaultAssets: false,
+    icons: {
+      iconfont: 'mdiSvg'
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

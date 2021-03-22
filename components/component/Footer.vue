@@ -18,7 +18,7 @@ export default {
 
     ],
     links: [
-      { text: 'Tasbit', link: 'https://tasbit.net' },
+      { text: 'Remenu', link: 'https://tasbit.net' },
       { text: 'Blog', link: 'https://portability.info' }
     ]
   })

@@ -21,7 +21,7 @@
     </v-btn>
     <img src="/img/icons/v-logo-small.png" alt="" height="30" class="mr-1">
     <v-toolbar-title :class="$vuetify.theme.dark ? 'primary--text' : null">
-      Tasbit
+      Remenu
     </v-toolbar-title>
     <v-spacer />
 

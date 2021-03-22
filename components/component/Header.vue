@@ -10,12 +10,12 @@
     <v-btn icon class="mx-1" @click.stop="TOGGLE_DRAWER">
       <template v-if="DRAWER_STATE">
         <v-icon size="28" :class="$vuetify.theme.dark ? 'primary--text' : null">
-          mdi-arrow-left
+          {{ mdiArrowLeftSvgPath }}
         </v-icon>
       </template>
       <template v-else>
         <v-icon size="28" :class="$vuetify.theme.dark ? 'primary--text' : null">
-          mdi-menu
+          {{ mdiMenuSvgPath }}
         </v-icon>
       </template>
     </v-btn>
@@ -38,6 +38,9 @@
 <script>
 import { mapActions, mapState } from 'vuex'
 // import config from '@/config'
+
+import { mdiArrowLeft } from '@mdi/js'
+import { mdiMenu } from '@mdi/js'
 
 export default {
   name: 'Header',
@@ -62,7 +65,9 @@ export default {
       { text: 'Messages', icon: 'mdi-flag', color: 'greyTint' }
     ],
     notificationsBadge: true,
-    messageBadge: true
+    messageBadge: true,
+    mdiArrowLeftSvgPath: mdiArrowLeft,
+    mdiMenuSvgPath: mdiMenu
   }),
   computed: {
     ...mapState('layout',

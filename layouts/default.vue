@@ -4,8 +4,8 @@
     <Sidebar v-if="isLogin" />
     <v-main class="content mx-0 mx-md-2">
       <nuxt />
-      <Footer v-if="isLogin" />
     </v-main>
+    <Footer v-if="isLogin" />
   </v-app>
 </template>
 

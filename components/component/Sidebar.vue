@@ -115,6 +115,8 @@ import { mapActions, mapState } from 'vuex'
 import firebase from 'firebase/app'
 import 'firebase/auth'
 
+import { mdiHome, mdiCheck, mdiCached, mdiBookOpen, mdiClipboardText, mdiAccountCircleOutline, mdiInformationOutline, mdiExitToApp } from '@mdi/js'
+
 export default {
   props: {
     source: String
@@ -143,6 +145,14 @@ export default {
       dialog: false,
       chat: false,
       chatMessage: ''
+      // mdiHomeSvgPath: mdiHome,
+      // mdiCheckSVgPath: mdiCheck,
+      // mdiCachedSvgPath: mdiCached,
+      // mdiBookOpenSvgPath: mdiBookOpen,
+      // mdiClipboardTextSvgPath: mdiClipboardText,
+      // mdiAccountCircleOutlineSvgPath: mdiAccountCircleOutline,
+      // mdiInformationOutlineSvgPath: mdiInformationOutline,
+      // mdiExitToAppSvgPath: mdiExitToApp
     }
   },
   computed: {
@@ -160,13 +170,13 @@ export default {
     },
     items () {
       return [
-        { title: this.$t('inbox'), icon: 'mdi-home', link: '/inbox' },
-        { title: this.$t('task'), icon: 'mdi-check', link: '/task' },
-        { title: this.$t('habit'), icon: 'mdi-cached', link: '/habit' },
-        { title: this.$t('memo'), icon: 'mdi-book-open', link: '/memo' },
-        { title: this.$t('report'), icon: 'mdi-clipboard-text', link: '/report' },
-        { title: this.$t('setting'), icon: 'mdi-account-circle-outline', link: '/setting' },
-        { title: this.$t('license'), icon: 'mdi-information-outline', link: '/license' },
+        { title: this.$t('inbox'), icon: mdiHome, link: '/inbox' },
+        { title: this.$t('task'), icon: mdiCheck, link: '/task' },
+        { title: this.$t('habit'), icon: mdiCached, link: '/habit' },
+        { title: this.$t('memo'), icon: mdiBookOpen, link: '/memo' },
+        { title: this.$t('report'), icon: mdiClipboardText, link: '/report' },
+        { title: this.$t('setting'), icon: mdiAccountCircleOutline, link: '/setting' },
+        { title: this.$t('license'), icon: mdiInformationOutline, link: '/license' },
         // {
         //   title: 'E-commerce',
         //   icon: 'mdi-cart',
@@ -294,7 +304,7 @@ export default {
         // { title: 'Support', icon: 'mdi-forum' },
         // { title: 'FAQ', icon: 'mdi-help-circle-outline' },
         { divider: true },
-        { title: 'LOGOUT', icon: 'mdi-exit-to-app', action: () => this.logOut() }
+        { title: 'LOGOUT', icon: mdiExitToApp, action: () => this.logOut() }
       // { heading: 'PROJECTS' },
       // { title: 'My recent', icon: 'mdi-circle-medium', color: 'warning' },
       // { title: 'Starred', icon: 'mdi-circle-medium', color: 'primaryConst' },

@@ -1,7 +1,6 @@
 <template>
   <div>
     <v-sheet class="bg-sheet pb-8" elevation="3">
-      <!-- <Toolbar3 /> -->
       <v-container class="py-12 py-lg-16 text-center">
         <v-row justify="center">
           <v-col cols="12" md="6">

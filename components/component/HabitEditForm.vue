@@ -84,22 +84,6 @@ export default {
       deep: true
     }
   },
-  created () {
-    // this.habitid = this.$route.params.habitid
-    // const self = this
-    // firebase
-    //   .firestore()
-    //   .collection('habits')
-    //   .doc(this.habitid)
-    //   .get()
-    //   .then(function (doc) {
-    //     self.selectedHabit.title = doc.data().name
-    //     self.selectedHabit.ifForTrigger1 = doc.data().ifForTrigger1
-    //     self.selectedHabit.thenForTrigger1 = doc.data().thenForTrigger1
-    //     self.selectedHabit.ifForRecovery1 = doc.data().ifForRecovery1
-    //     self.selectedHabit.thenForRecovery1 = doc.data().thenForRecovery1
-    //   })
-  },
   methods: {
     saveHabit (e) {
       // e.preventDefault()

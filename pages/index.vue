@@ -1,11 +1,13 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="10" sm="8" md="6">
+    <v-col cols="11" sm="10" md="9">
       <div class="text-center">
-        <TopView />
         <!-- <logo /> -->
         <!-- <vuetify-logo /> -->
         <Hero />
+        <TopView
+          class="mt-6"
+        />
         <Feature />
         <Pricing />
       </div>
@@ -16,9 +18,9 @@
 <script>
 // import Logo from '~/components/Logo.vue'
 // import VuetifyLogo from '~/components/VuetifyLogo.vue'
-import Hero from '@/components/component/LandingPage/Hero.vue'
-import Feature from '@/components/component/LandingPage/Feature.vue'
-import Pricing from '@/components/component/LandingPage/Pricing.vue'
+import Hero from '~/components/component/landingPage/Hero.vue'
+import Feature from '~/components/component/landingPage/Feature.vue'
+import Pricing from '~/components/component/landingPage/Pricing.vue'
 import TopView from '~/components/component/TopView.vue'
 export default {
   components: {

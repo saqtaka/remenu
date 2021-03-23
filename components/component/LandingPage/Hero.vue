@@ -1,5 +1,5 @@
 <template>
-  <div class="hero6">
+  <div>
     <v-sheet class="bg-sheet pb-8" elevation="3">
       <!-- <Toolbar3 /> -->
       <v-container class="py-12 py-lg-16 text-center">
@@ -13,8 +13,8 @@
             </h2>
           </v-col>
           <v-col cols="12" md="6">
-            <v-layout justify-center>
-              <v-img :src="require('@/assets/images/tasbit.png')" alt="" class="rounded elevation-3 mb-6" max-width="260" max-height="520" />
+            <v-layout wrap justify-center>
+              <v-img :src="require('@/assets/images/20944172.jpg')" alt="" class="rounded elevation-3 mb-6" />
             </v-layout>
           </v-col>
         </v-row>

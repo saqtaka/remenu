@@ -180,9 +180,9 @@ export default {
           agree: 'ログインすることで、あなたは以下の内容に同意するものとします。',
           terms: '利用規約',
           privacy: 'プライバシーポリシー',
-          heading_message1: 'あなたの',
+          heading_message1: '',
           heading_message2: '習慣管理',
-          heading_message3: 'にフォーカスしたTODOアプリ',
+          heading_message3: 'できるTODOアプリ',
           heading_sub: '習慣とタスクを同時に管理しましょう。',
           price_title: '料金',
           price_sub: 'サービスの全機能を無料で利用できます。',
@@ -233,7 +233,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      // dark: true,
       themes: {
         dark: {
           primary: colors.blue.darken2,

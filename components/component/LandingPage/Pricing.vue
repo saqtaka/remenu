@@ -70,7 +70,7 @@
                 outlined
                 :dark="plan.highlight"
                 :class="[plan.highlight && 'secondary']"
-                to="/signup"
+                :to="plan.to"
               >
                 {{ plan.price ? $t('price_button') : 'Contact Sales' }}
               </v-btn>
@@ -90,6 +90,7 @@ export default {
         highlight: true,
         title: this.$t('plan_name1'),
         price: this.$t('price1'),
+        to: '/createanoanonymousaccount',
         features: [{
           value: '',
           label: this.$t('price_feature1')
@@ -102,6 +103,7 @@ export default {
         highlight: true,
         title: this.$t('plan_name2'),
         price: this.$t('price1'),
+        to: '/signup',
         features: [{
           value: '',
           label: this.$t('price_feature1')

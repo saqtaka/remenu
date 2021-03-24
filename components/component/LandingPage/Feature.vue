@@ -24,7 +24,6 @@
         v-for="(item, i) in features"
         :key="i"
         cols="12"
-        md="6"
       >
         <v-card
           class="py-4 px-2"

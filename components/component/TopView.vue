@@ -1,9 +1,13 @@
 <template>
   <div>
     <v-sheet class="bg-sheet pb-8" elevation="3">
-      <!-- <Toolbar3 /> -->
       <v-container class="py-12 py-lg-16 text-center">
         <v-row justify="center">
+          <v-col cols="12" md="6">
+            <h2 class="text-h4 primary--text mt-2">
+              if thenプランで習慣を管理
+            </h2>
+          </v-col>
           <v-col cols="8" md="6">
             <div>
               <v-text-field
@@ -16,31 +20,30 @@
               />
             </div>
           </v-col>
+          <v-col cols="12" md="6">
+            <div>
+              <h3>Remenuはif thenプランで習慣を管理できるWebアプリです。</h3>
+              <v-divider />
+              <div class="mt-6">
+                <h4>if thenプランとは？</h4>
+                <p>「if then プラン」はもし「こういう状況になったら」、「こういう行動をとる」</p>
+                <p>というのを自分の中に条件付けすることで、目標達成を促進する方法です。</p>
+                <p>例えば、「お風呂に入る前に」、「腕立て伏せをする」</p>
+                <p>というようにアクションをとる状況を事前に決めておくことで、行動を起こすことができる確率が大幅に上がります。</p>
+              </div>
+            </div>
+          </v-col>
+          <v-col cols="12" md="6">
+            <div>
+              <v-btn>
+                新しい方法で習慣を管理する
+              </v-btn>
+            </div>
+          </v-col>
         </v-row>
       </v-container>
     </v-sheet>
-    <div>
-      <v-btn>
-        新しい方法で習慣を管理する
-      </v-btn>
-    </div>
-    <!-- <div>
-          <h3>re menuはif thenプランで習慣を管理できるWebアプリです。</h3>
-          <h4>if thenプランとは？</h4>
-          <p>「if then プラン」はもし「こういう状況になったら」、「こういう行動をとる」というのを自分の中に条件付けすることで、目標達成を促進する方法です。</p>
-          <p>例えば、</p>
-          <p>「お風呂に入る前に」、</p>
-          <p>「腕立て伏せをする」</p>
-          <p>というようにアクションをとる状況を事前に決めておくことで、行動を起こすことができる確率が大幅に上がります。</p>
-          <h4>if thenプランとは？</h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-        </div> -->
+    <div />
   </div>
 </template>
 

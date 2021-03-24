@@ -25,6 +25,7 @@
             outlined
             elevation="3"
             :max-width="300"
+            :min-height="600"
           >
             <v-sheet class="pa-4 text-center">
               <div class="mb-6">
@@ -88,6 +89,18 @@ export default {
       plans: [{
         highlight: true,
         title: this.$t('plan_name1'),
+        price: this.$t('price1'),
+        features: [{
+          value: '',
+          label: this.$t('price_feature1')
+        }, {
+          value: '',
+          label: this.$t('price_feature2')
+        }]
+      },
+      {
+        highlight: true,
+        title: this.$t('plan_name2'),
         price: this.$t('price1'),
         features: [{
           value: '',

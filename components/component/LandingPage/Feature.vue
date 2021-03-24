@@ -10,6 +10,10 @@
       </div>
     </v-responsive>
 
+    <!-- <v-row
+      class="mt-10"
+      dense
+    > -->
     <v-row
       class="mt-10"
       align="center"
@@ -27,14 +31,7 @@
           outlined
           elevation="3"
         >
-          <div class="d-flex">
-            <div class="mr-2">
-              <v-sheet color="secondary" rounded class="pa-2" dark>
-                <v-icon large>
-                  {{ item.icon }}
-                </v-icon>
-              </v-sheet>
-            </div>
+          <div>
             <div>
               <div class="text-h5 font-weight-bold">
                 {{ item.title }}

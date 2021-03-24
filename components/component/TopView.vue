@@ -3,12 +3,12 @@
     <v-sheet class="bg-sheet pb-8" elevation="3">
       <v-container class="py-12 py-lg-16 text-center">
         <v-row justify="center">
-          <v-col cols="12" md="6">
+          <v-col cols="12">
             <h2 class="text-h4 primary--text mt-2">
               if thenプランで習慣を管理
             </h2>
           </v-col>
-          <v-col cols="8" md="6">
+          <v-col cols="8">
             <div>
               <v-text-field
                 v-model="ifDisplayValue"
@@ -20,7 +20,7 @@
               />
             </div>
           </v-col>
-          <v-col cols="12" md="6">
+          <v-col cols="12">
             <div>
               <h3>Remenuはif thenプランで習慣を管理できるWebアプリです。</h3>
               <v-divider />
@@ -33,7 +33,7 @@
               </div>
             </div>
           </v-col>
-          <v-col cols="12" md="6">
+          <v-col cols="12">
             <div>
               <v-btn to="/signup">
                 新しい方法で習慣を管理する

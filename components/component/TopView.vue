@@ -35,7 +35,7 @@
           </v-col>
           <v-col cols="12" md="6">
             <div>
-              <v-btn>
+              <v-btn to="/signup">
                 新しい方法で習慣を管理する
               </v-btn>
             </div>

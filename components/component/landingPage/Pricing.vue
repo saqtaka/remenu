@@ -69,7 +69,7 @@
                 outlined
                 :dark="plan.highlight"
                 :class="[plan.highlight && 'secondary']"
-                @click="clickSignup"
+                to="/signup"
               >
                 {{ plan.price ? $t('price_button') : 'Contact Sales' }}
               </v-btn>

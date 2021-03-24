@@ -128,7 +128,7 @@ export default {
           feature2_title: 'Implementation Intentions function',
           feature2_detail: 'In acquiring a habit, it is easier to establish a habit if you decide to do this when the situation arises.',
           feature3_title: 'Email notification',
-          feature3_detail: 'It notifies you via email so that you don\'t break your habit, and push notifications are also available for Android devices.',
+          feature3_detail: 'It notifies you via email so that you don\'t break your habit.',
           feature4_title: 'Ability to check total task time',
           feature4_detail: 'You can check whether the schedule you have made is feasible or not.',
           feature5_title: 'memo function',
@@ -206,7 +206,7 @@ export default {
           feature2_title: 'if thenプラン機能',
           feature2_detail: '習慣を獲得する上で「こういう状況になったら、これをする」と決めると習慣が定着しやすくなります。',
           feature3_title: 'メール通知機能',
-          feature3_detail: '習慣が途切れないようにメールで通知します。Android端末ではPush通知もできます。',
+          feature3_detail: '習慣が途切れないようにメールで通知します。',
           feature4_title: 'タスク総時間の確認機能',
           feature4_detail: '立てた予定が実行可能なのか確認することができます。',
           feature5_title: 'メモ機能',
@@ -265,7 +265,7 @@ export default {
             chunks: 'all',
             enforce: false,
             minSize: 30000,
-            maxSize: 1000000
+            maxSize: 500000
           }
         }
       }

@@ -38,8 +38,7 @@
 import { mapActions, mapState } from 'vuex'
 // import config from '@/config'
 
-import { mdiArrowLeft } from '@mdi/js'
-import { mdiMenu } from '@mdi/js'
+import { mdiArrowLeft, mdiMenu } from '@mdi/js'
 
 export default {
   name: 'Header',

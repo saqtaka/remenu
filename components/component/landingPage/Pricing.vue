@@ -10,7 +10,7 @@
     </v-responsive>
 
     <v-row
-      class="mt-2"
+      class="mt-3"
       align="center"
       justify="center"
       dense
@@ -26,7 +26,7 @@
             rounded="xl"
             outlined
             :max-width="300"
-            :min-height="600"
+            :min-height="540"
           >
             <v-sheet class="pa-4 text-center">
               <div class="mb-6">
@@ -47,16 +47,15 @@
                   / {{ $t('per') }}
                 </div>
               </div>
-              <div v-else class="text-h6 my-2">
-                A personalized approach to your business needs
-              </div>
             </v-sheet>
             <!-- <div class="text-center">
               <v-chip v-if="plan.highlight" color="secondary" class="mb-n3 overline font-weight-bold" small>Popular</v-chip>
             </div> -->
             <v-divider />
-            <v-sheet class="pa-4" color="surface">
-              <div class="my-6 text-h6">
+            <v-sheet class="pa-4" color="surface" :height="240">
+              <div
+                class="my-6 text-h6"
+              >
                 <div v-for="(feat, j) in plan.features" :key="j" class="d-flex align-center my-1">
                   <v-icon color="success" class="mr-2">
                     mdi-check
@@ -65,6 +64,8 @@
                   <span class="text-truncate">{{ feat.label }}</span>
                 </div>
               </div>
+            </v-sheet>
+            <v-sheet class="mx-4 my-2" color="surface">
               <v-btn
                 x-large
                 block

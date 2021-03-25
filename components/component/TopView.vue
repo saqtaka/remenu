@@ -36,7 +36,11 @@
           </v-col>
           <v-col cols="12">
             <div>
-              <v-btn to="/signup">
+              <v-btn
+                x-large
+                class="primary"
+                to="/signup"
+              >
                 新しい方法で習慣を管理する
               </v-btn>
             </div>

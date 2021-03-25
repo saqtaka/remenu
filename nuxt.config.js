@@ -10,7 +10,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Remenuは習慣を管理できるTODOアプリです。' },
       { hid: 'og:description', name: 'og:description', content: 'Remenu - 習慣を管理できるTODOアプリ' },
-      { hid: 'og:image', name: 'og:image', content: '/ogimg.jpg' },
+      { hid: 'og:image', name: 'og:image', content: 'https://remenu.app/ogimg.jpg' },
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [

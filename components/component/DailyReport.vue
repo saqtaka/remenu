@@ -1,7 +1,7 @@
 <template>
   <div id="dailyReport">
     <div class=" ">
-      <v-card>
+      <v-card rounded="xl">
         <v-card-text>
           <table class="table">
             <thead>

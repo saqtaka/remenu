@@ -1,6 +1,11 @@
 <template>
   <div>
-    <v-card class="my-2" color="greyDefault" @click="clickEditButton">
+    <v-card
+      class="my-2"
+      color="greyDefault"
+      rounded="xl"
+      @click="clickEditButton"
+    >
       <v-card-text class="pa-1">
         <v-container class="pa-0 ma-0">
           <v-row align="center" class="pa-0 ma-0">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card v-for="(license, key) in licenses" :key="key" class="my-2" @click="onLicenseClick(license)">
+    <v-card rounded="xl" v-for="(license, key) in licenses" :key="key" class="my-2" @click="onLicenseClick(license)">
       <v-card-text>
         <div>{{ key }} {{ license.publisher }} ({{ license.licenses }})</div>
         <div>{{ license.repository }}</div>

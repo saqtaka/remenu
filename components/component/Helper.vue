@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center primary">
+  <div class="text-center">
     <!-- <v-menu
         v-model="menu"
         :close-on-content-click="false"
@@ -19,7 +19,7 @@
         </v-icon>
       </template> -->
 
-    <v-card class="px-0">
+    <v-card height="300" rounded="xl" class="px-0">
       <v-list>
         <v-list-item>
           <v-list-item-content>

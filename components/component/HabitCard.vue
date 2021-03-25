@@ -1,5 +1,9 @@
 <template>
-  <v-card class="my-2" @click="clearButton">
+  <v-card
+    class="my-2"
+    rounded="xl"
+    @click="clearButton"
+  >
     <v-card-title>
       <div class="body-1">
         {{ habitData.title }}

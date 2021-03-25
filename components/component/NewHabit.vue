@@ -1,6 +1,6 @@
 <template>
   <div id="newHabit">
-    <v-card>
+    <v-card rounded="lg">
       <v-card-text>
         <v-form
           ref="form"

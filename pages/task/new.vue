@@ -11,7 +11,7 @@
         <v-col
           class="text-center"
         >
-          <v-card>
+          <v-card rounded="xl">
             <v-card-text>
               <TaskEditForm :send-task="inputTask" />
             </v-card-text>

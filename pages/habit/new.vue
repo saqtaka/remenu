@@ -11,7 +11,7 @@
         <v-col
           class="text-center"
         >
-          <v-card>
+          <v-card rounded="lg">
             <v-card-text>
               <HabitEditForm :send-habit="inputHabit" />
             </v-card-text>

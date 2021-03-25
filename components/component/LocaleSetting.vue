@@ -1,5 +1,5 @@
 <template>
-  <v-card height="300" rounded="xl">
+  <v-card rounded="xl">
     <v-card-text>
       <div class="locale">
         <v-select

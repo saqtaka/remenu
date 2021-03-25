@@ -1,25 +1,6 @@
 <template>
   <div class="text-center">
-    <!-- <v-menu
-        v-model="menu"
-        :close-on-content-click="false"
-        left
-        tile
-        offset-x
-        nudge-left="15"
-    > -->
-    <!-- <template v-slot:activator="{ on, attrs }">
-        <v-icon
-          size="28"
-          color="white"
-          v-bind="attrs"
-          v-on="on"
-        >
-          mdi-cog
-        </v-icon>
-      </template> -->
-
-    <v-card height="300" rounded="xl" class="px-0">
+    <v-card rounded="xl" class="px-0">
       <v-list>
         <v-list-item>
           <v-list-item-content>

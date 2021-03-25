@@ -55,27 +55,29 @@
               <a href="https://ja.blog.tasbit.net" class="text-decoration-none secondary--text text--lighten-2">ja.blog.tasbit.net</a>
             </div> -->
           </v-col>
-          <v-row>
-            <v-col cols="12" md="4">
-              <div class="text-h6 font-weight-bold text-uppercase mb-5">
-                Terms and Privacy
-              </div>
-              <div class="d-flex mb-2">
-                <v-icon color="secondary lighten-1" class="mr-2">
-                  {{ mdiPostSvgPath }}
-                </v-icon>
-                <a href="https://ja.blog.tasbit.net/terms/" class="text-decoration-none secondary--text text--lighten-2">Terms</a>
-              </div>
-              <div class="d-flex mb-2">
-                <v-icon color="secondary lighten-1" class="mr-2">
-                  {{ mdiPostSvgPath }}
-                </v-icon>
-                <a href="https://ja.blog.tasbit.net/privacy/" class="text-decoration-none secondary--text text--lighten-2">Privacy</a>
-              </div>
-            </v-col>
-          </v-row>
-          <v-divider class="my-4" />
-          <a href="http://www.freepik.com">Top image designed by vectorjuice / Freepik</a>
+          <v-col cols="12" md="4">
+            <div class="text-h6 font-weight-bold text-uppercase mb-5">
+              Terms and Privacy
+            </div>
+            <div class="d-flex mb-2">
+              <v-icon color="secondary lighten-1" class="mr-2">
+                {{ mdiPostSvgPath }}
+              </v-icon>
+              <a href="https://ja.blog.tasbit.net/terms/" class="text-decoration-none secondary--text text--lighten-2">Terms</a>
+            </div>
+            <div class="d-flex mb-2">
+              <v-icon color="secondary lighten-1" class="mr-2">
+                {{ mdiPostSvgPath }}
+              </v-icon>
+              <a href="https://ja.blog.tasbit.net/privacy/" class="text-decoration-none secondary--text text--lighten-2">Privacy</a>
+            </div>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12">
+            <v-divider class="my-4" />
+            <a href="http://www.freepik.com">Top image designed by vectorjuice / Freepik</a>
+          </v-col>
         </v-row>
       </v-container>
     </v-footer>

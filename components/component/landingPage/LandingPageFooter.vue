@@ -57,6 +57,7 @@
           </v-col>
         </v-row>
         <v-divider class="my-4" />
+        <a href="http://www.freepik.com">Top image designed by vectorjuice / Freepik</a>
       </v-container>
     </v-footer>
   </div>

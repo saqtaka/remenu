@@ -10,7 +10,7 @@
     </v-responsive>
 
     <v-row
-      class="mt-10"
+      class="mt-2"
       align="center"
       justify="center"
       dense

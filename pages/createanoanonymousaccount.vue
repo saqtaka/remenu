@@ -9,7 +9,7 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 
 export default {
-  created () {
+  mounted () {
     firebase.auth().signInAnonymously()
       .then(() => {
         // Signed in..

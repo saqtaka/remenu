@@ -8,21 +8,28 @@
               if thenプランで習慣を管理
             </h2>
           </v-col>
-          <v-col cols="8">
-            <div>
-              <v-text-field
-                v-model="ifDisplayValue"
-                :loading="isIfLoading"
-              />
-              <v-text-field
-                v-model="thenDisplayValue"
-                :loading="isThenLoading"
-              />
-            </div>
+          <v-col cols="12" md="8">
+            <v-sheet
+              outlined
+              elevation="1"
+              rounded="xl"
+              class="pa-8"
+            >
+              <div>
+                <v-text-field
+                  v-model="ifDisplayValue"
+                  :loading="isIfLoading"
+                />
+                <v-text-field
+                  v-model="thenDisplayValue"
+                  :loading="isThenLoading"
+                />
+              </div>
+            </v-sheet>
           </v-col>
           <v-col cols="12">
             <div>
-              <v-divider />
+              <!-- <v-divider /> -->
               <div class="mt-6">
                 <h4>if thenプランとは？</h4>
                 <div class="mt-10 text-left mx-8 mx-md-16">

@@ -74,7 +74,8 @@
                 :class="[plan.highlight && 'secondary']"
                 :to="plan.to"
               >
-                {{ plan.price ? $t('price_button') : 'Contact Sales' }}
+                <!-- {{ plan.price ? $t('price_button') : 'Contact Sales' }} -->
+                {{ plan.btnLabel }}
               </v-btn>
             </v-sheet>
           </v-card>
@@ -89,10 +90,11 @@ export default {
   data () {
     return {
       plans: [{
-        highlight: true,
+        highlight: false,
         title: this.$t('plan_name1'),
         price: this.$t('price1'),
         to: '/createanoanonymousaccount',
+        btnLabel: '登録しないで使ってみる',
         features: [{
           value: '',
           label: this.$t('price_feature1')
@@ -106,6 +108,7 @@ export default {
         title: this.$t('plan_name2'),
         price: this.$t('price1'),
         to: '/signup',
+        btnLabel: '登録する',
         features: [{
           value: '',
           label: this.$t('price_feature1')

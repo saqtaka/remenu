@@ -28,18 +28,6 @@
           </v-btn>
         </v-form>
 
-        <!-- <div class="d-flex my-3">
-          <v-divider class="my-1"></v-divider>
-          <div class="text-overline mx-1">Or Sign In With</div>
-          <v-divider class="my-1"></v-divider>
-        </div> -->
-
-        <!-- <div class="d-flex justify-space-between">
-          <v-btn outlined large class="flex-grow-1" color="secondary lighten-2" @click="SignInGoogle">
-            <v-icon>mdi-google</v-icon>
-          </v-btn>
-        </div> -->
-
         <div class="text-overline text-uppercase mt-3 text-center">
           <v-responsive max-width="280" class="mx-auto">
             <div>

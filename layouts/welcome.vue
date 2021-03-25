@@ -2,7 +2,7 @@
   <v-app dark>
     <LandingPageHeader />
     <v-main>
-      <v-container>
+      <v-container class="px-0">
         <nuxt />
       </v-container>
     </v-main>

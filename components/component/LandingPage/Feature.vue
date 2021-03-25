@@ -1,7 +1,7 @@
 <template>
   <!-- <v-sheet color="transparent"> -->
-  <v-container class="pt-16 pt-md-16 pb-10">
-    <v-responsive max-width="700" class="mx-auto text-center">
+  <v-container class="pt-16 pt-md-16 pb-10 px-0">
+    <v-responsive max-width="900" class="mx-auto text-center">
       <h2 class="text-h3 text-lg-h2">
         {{ $t('feature_title') }}
       </h2>
@@ -28,7 +28,8 @@
         <v-card
           class="py-4 px-2"
           outlined
-          elevation="3"
+          elevation="4"
+          rounded="xl"
         >
           <div>
             <div>

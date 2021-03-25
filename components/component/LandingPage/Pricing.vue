@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pt-16 pt-md-16 pb-10">
+  <v-container class="pt-16 pt-md-16 pb-10 px-0">
     <v-responsive max-width="700" class="mx-auto text-center">
       <h2 class="text-h3 text-lg-h2">
         {{ $t('price_title') }}
@@ -22,8 +22,9 @@
         <v-layout justify-center>
           <v-card
             class="text-body-1"
+            elevation="4"
+            rounded="xl"
             outlined
-            elevation="3"
             :max-width="300"
             :min-height="600"
           >

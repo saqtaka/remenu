@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-sheet class="bg-sheet pb-8" elevation="3">
+    <v-sheet class="bg-sheet pb-8" elevation="1" rounded="xl">
       <v-container class="py-12 py-lg-16 text-center">
         <v-row justify="center">
           <v-col cols="12">
@@ -22,14 +22,14 @@
           </v-col>
           <v-col cols="12">
             <div>
-              <h3>Remenuはif thenプランで習慣を管理できるWebアプリです。</h3>
               <v-divider />
               <div class="mt-6">
                 <h4>if thenプランとは？</h4>
-                <div class="text-left mx-16">
+                <div class="mt-10 text-left mx-8 mx-md-16">
                   <p>if then プランはもし「こういう状況になったら、こういう行動をとる」というのを自分の中に条件付けすることで、目標達成を促進する方法です。</p>
                   <p>例えば、「お風呂に入る前に、腕立て伏せをする」</p>
                   <p>というようにアクションをとる状況を事前に決めておくことで、行動を起こすことができる確率が大幅に上がります。</p>
+                  <p>Remenuはif thenプランで習慣を管理できるWebアプリです。</p>
                 </div>
               </div>
             </div>

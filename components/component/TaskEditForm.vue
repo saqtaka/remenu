@@ -62,6 +62,8 @@ export default {
   watch: {
     sendTask: {
       handler (newValue, oldValue) {
+        this.taskid = this.sendTask
+
         const self = this
         firebase
           .firestore()

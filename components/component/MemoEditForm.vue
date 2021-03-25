@@ -44,6 +44,8 @@ export default {
   watch: {
     sendMemo: {
       handler (newValue, oldValue) {
+        this.memoid = this.sendMemo
+
         const self = this
         firebase
           .firestore()
@@ -56,18 +58,6 @@ export default {
       },
       deep: true
     }
-  },
-  created () {
-    // this.memoid = this.$route.params.memoid
-    // const self = this
-    // firebase
-    //   .firestore()
-    //   .collection('memos')
-    //   .doc(this.memoid)
-    //   .get()
-    //   .then(function (doc) {
-    //     self.inputMemo = doc.data().memo
-    //   })
   },
   methods: {
     saveMemo (e) {

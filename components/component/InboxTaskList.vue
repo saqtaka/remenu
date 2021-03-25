@@ -1,7 +1,7 @@
 <template>
   <div id="taskList">
-    <div class="mt-1 mr-1 pt-1 pr-1 text-right">
-      <span class="primary--text">{{ this.totalTime }}{{ $t('minute') }}</span>
+    <div v-if="tasks.length" class="mt-1 mr-1 pt-1 pr-1 text-right">
+      <span class="primary--text">{{ totalTime }}{{ $t('minute') }}</span>
     </div>
     <TaskCard
       v-for="(task, index) in tasks"
@@ -49,7 +49,6 @@ export default {
         this.totalTime = 0
 
         for (const task of newValue) {
-          console.log(task.timeRequired)
           this.totalTime += task.timeRequired
         }
       }

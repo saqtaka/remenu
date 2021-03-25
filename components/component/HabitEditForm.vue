@@ -67,6 +67,7 @@ export default {
   watch: {
     sendHabit: {
       handler (newValue, oldValue) {
+        this.habitid = newValue
         const self = this
         firebase
           .firestore()

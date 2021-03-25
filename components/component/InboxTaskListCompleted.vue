@@ -1,7 +1,7 @@
 <template>
-  <div id="taskList">
-    <div class="mt-1 mr-1 pt-1 pr-1 text-right">
-      <span class="primary--text">{{ this.totalTime }}{{ $t('minute') }}</span>
+  <div>
+    <div v-if="tasks.length" class="mt-1 mr-1 pt-1 pr-1 text-right">
+      <span class="primary--text">{{ totalTime }}{{ $t('minute') }}</span>
     </div>
     <TaskCardCompleted
       v-for="(task, index) in tasks"
@@ -23,7 +23,6 @@ import 'firebase/auth'
 import 'firebase/firestore'
 
 export default {
-  name: 'TaskList',
   components: {
     TaskCardCompleted
   },
@@ -49,7 +48,7 @@ export default {
         this.totalTime = 0
 
         for (const task of newValue) {
-          this.totalTime = this.totalTime + task.timeRequired
+          this.totalTime += task.timeRequired
         }
       }
     }

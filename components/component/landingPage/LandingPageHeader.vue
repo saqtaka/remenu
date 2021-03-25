@@ -5,21 +5,26 @@
       fixed
     >
       <!-- <v-app-bar-nav-icon /> -->
+      <img src="/v-logo-small.png" alt="" height="30" class="mr-1">
       <v-toolbar-title>
         Remenu
       </v-toolbar-title>
 
       <v-spacer />
 
-      <div class="mx-1">
+      <!-- <div class="mx-1">
         <v-btn color="primary" @click="clickLang">
           {{ lang }}
         </v-btn>
+      </div> -->
+      <div class="mx-1">
+        <v-btn color="primary" to="/signup">
+          登録
+        </v-btn>
       </div>
-
       <div class="mx-1">
         <v-btn color="primary" to="/signin">
-          LOGIN
+          ログイン
         </v-btn>
       </div>
     </v-app-bar>

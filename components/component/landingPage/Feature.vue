@@ -26,6 +26,7 @@
           outlined
           elevation="4"
           rounded="xl"
+          min-height="150"
         >
           <div>
             <div>

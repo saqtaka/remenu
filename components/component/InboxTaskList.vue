@@ -115,7 +115,7 @@ export default {
           FBUpsertDailyReport(firebase.auth().currentUser.uid, date, selectedHabitId)
 
           if (selectedHabitId) {
-            FBAddHabitTrigger(selectedHabitId, selectedCount)
+            FBAddHabitTrigger(selectedHabitId, selectedCount, date)
           }
         })
         .catch(function (error) {

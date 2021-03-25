@@ -30,30 +30,30 @@
               </v-icon>
               <a href="https://saqtaka.com" class="text-decoration-none secondary--text text--lighten-2">saqtaka.com</a>
             </div>
-            <div class="d-flex mb-2">
+            <!-- <div class="d-flex mb-2">
               <v-icon color="secondary lighten-1" class="mr-2">
                 {{ mdiPostSvgPath }}
               </v-icon>
               <a href="https://portability.info" class="text-decoration-none secondary--text text--lighten-2">portability.info</a>
-            </div>
+            </div> -->
             <div class="d-flex mb-2">
               <v-icon color="secondary lighten-1" class="mr-2">
                 {{ mdiPostSvgPath }}
               </v-icon>
               <a href="https://memo.portability.info" class="text-decoration-none secondary--text text--lighten-2">memo.portability.info</a>
             </div>
-            <div class="d-flex mb-2">
+            <!-- <div class="d-flex mb-2">
               <v-icon color="secondary lighten-1" class="mr-2">
                 {{ mdiPostSvgPath }}
               </v-icon>
               <a href="https://en.blog.tasbit.net" class="text-decoration-none secondary--text text--lighten-2">en.blog.tasbit.net</a>
-            </div>
-            <div class="d-flex mb-2">
+            </div> -->
+            <!-- <div class="d-flex mb-2">
               <v-icon color="secondary lighten-1" class="mr-2">
                 {{ mdiPostSvgPath }}
               </v-icon>
               <a href="https://ja.blog.tasbit.net" class="text-decoration-none secondary--text text--lighten-2">ja.blog.tasbit.net</a>
-            </div>
+            </div> -->
           </v-col>
         </v-row>
         <v-divider class="my-4" />

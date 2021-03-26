@@ -32,6 +32,15 @@ export default {
       isLogin: false
     }
   },
+  head () {
+    return {
+      meta: [
+        {
+          name: 'robots', content: 'noindex'
+        }
+      ]
+    }
+  },
   created () {
     // initializeApp()
 

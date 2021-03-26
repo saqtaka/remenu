@@ -7,7 +7,7 @@
       <div style="width: 80px; height: 4px" class="mb-3 secondary mx-auto" />
     </div>
 
-    <v-card class="pa-3 mx-auto" max-width="500">
+    <v-card class="pa-3 mx-auto" max-width="500" rounded="xl">
       <v-card-title>
         <v-divider class="my-1" />
         <div class="mx-2">
@@ -63,13 +63,13 @@ export default {
     }
   },
   created () {
-    console.log(this.$route.query.lang)
+    // console.log(this.$route.query.lang)
     if (this.$route.query.lang === 'ja') {
       this.$i18n.locale = 'ja-JP'
     } else if (this.$route.query.lang === 'en') {
       this.$i18n.locale = 'en-US'
     }
-    console.log(this.$i18n.locale)
+    // console.log(this.$i18n.locale)
   },
   methods: {
     SignUp () {

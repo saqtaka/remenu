@@ -184,11 +184,11 @@ export default {
           report_habitCount: '習慣',
           report_totalCount: '合計',
           minute: '分',
-          signin_title: 'Remenu ログイン',
+          signin_title: 'Remenu',
           signin_sub: 'ログイン',
           signin_button: 'ログインする',
           signin_forget: 'パスワードを忘れた方はこちら',
-          signup_title: 'Remenu ユーザー作成',
+          signup_title: 'Remenu',
           signup_sub: '新規登録',
           signup_button: 'ユーザーを作成する',
           agree: 'ログインすることで、あなたは以下の内容に同意するものとします。',
@@ -266,7 +266,7 @@ export default {
           greyMedium: '#6e6e6e',
           greyTint: '#b9b9b9',
           default: '#e0e0e0',
-          iconColor: '#FFFFFF59'
+          iconColor: '#FFFF59'
         },
         dark: {
           // primary: colors.blue.darken2,

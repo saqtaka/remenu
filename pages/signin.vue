@@ -7,7 +7,7 @@
       <div style="width: 80px; height: 4px" class="mb-3 secondary mx-auto" />
     </div>
 
-    <v-card class="pa-3 mx-auto" max-width="500">
+    <v-card class="pa-3 mx-auto" max-width="500" rounded="xl">
       <v-card-title>
         <v-divider class="my-1" />
         <div class="mx-2">
@@ -92,8 +92,6 @@ export default {
       } catch (e) {
         console.error(e)
       }
-
-      console.log('test')
     },
     SignInGoogle () {
       const provider = new this.$fire.auth.GoogleAuthProvider()

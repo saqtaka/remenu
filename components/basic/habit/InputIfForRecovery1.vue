@@ -27,7 +27,7 @@ export default {
     return {
       ifForRecovery1: this.ifForRecovery1Prop,
       ifForRecovery1Rules: [
-        v => (v && v.length <= 100) || this.$t('error_inputCount', { num: '100' })
+        v => (!v || v.length <= 100) || this.$t('error_inputCount', { num: '100' })
       ]
     }
   },

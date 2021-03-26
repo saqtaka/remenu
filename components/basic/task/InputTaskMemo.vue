@@ -27,7 +27,7 @@ export default {
     return {
       memoName: this.memoNameProp,
       memoNameRules: [
-        v => (v && v.length <= 500) || this.$t('error_inputCount', { num: '500' })
+        v => (!v || v.length <= 500) || this.$t('error_inputCount', { num: '500' })
       ]
     }
   },

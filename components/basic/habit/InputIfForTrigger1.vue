@@ -27,7 +27,7 @@ export default {
     return {
       ifForTrigger1: this.ifForTrigger1Prop,
       ifForTrigger1Rules: [
-        v => (v && v.length <= 100) || this.$t('error_inputCount', { num: '100' })
+        v => (!v || v.length <= 100) || this.$t('error_inputCount', { num: '100' })
       ]
     }
   },

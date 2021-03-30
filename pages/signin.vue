@@ -67,7 +67,8 @@ export default {
     return {
       emailAddress: '',
       password: '',
-      valid: true
+      valid: true,
+      errorMessage: this.$t('error_default')
     }
   },
   created (e) {
@@ -92,7 +93,7 @@ export default {
             if (error.code === 'auth/user-not-found') {
               displayMessage = 'ユーザーが見つかりませんでした。'
             } else {
-              displayMessage = 'ログインエラーが発生しました。やり直してください。'
+              displayMessage = this.errorMessage
             }
             window.alert(displayMessage)
           })
@@ -116,12 +117,12 @@ export default {
           // The signed-in user info.
           // var user = result.user
           // ...
-        }).catch((error) => {
-          // Handle Errors here.
-          // var errorCode = error.code
-          // var errorMessage = error.message
-          console.error(error.code)
-          console.error(error.message)
+        }).catch(() => {
+        // }).catch((error) => {
+
+          // console.error(error.code)
+          // console.error(error.message)
+          window.alert(this.errorMessage)
           // The email of the user's account used.
           // var email = error.email
           // The firebase.auth.AuthCredential type that was used.

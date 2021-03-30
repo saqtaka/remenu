@@ -34,7 +34,6 @@ export default {
     }
   },
   mounted () {
-    // console.log('get1')
     const self = this
     firebase.auth().onAuthStateChanged((user) => {
       getLocale(firebase.auth().currentUser.uid)

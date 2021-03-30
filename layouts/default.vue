@@ -70,9 +70,9 @@ export default {
       } else {
         this.isLogin = false
 
-        if (this.$route.path !== '/signin' && this.$route.path !== '/signup') {
-          this.$router.push({ path: '/signin' })
-        }
+        // if (this.$route.path !== '/signin' && this.$route.path !== '/signup') {
+        //   this.$router.push({ path: '/signin' })
+        // }
       }
     })
   }

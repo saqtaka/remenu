@@ -86,11 +86,19 @@ export default {
             this.$router.push({ path: '/inbox' })
           })
           .catch((error) => {
-            console.error(error.code)
-            console.error(error.message)
+            // console.error(error.code)
+            // console.error(error.message)
+            let displayMessage
+            if (error.code === 'auth/user-not-found') {
+              displayMessage = 'ユーザーが見つかりませんでした。'
+            } else {
+              displayMessage = 'ログインエラーが発生しました。やり直してください。'
+            }
+            window.alert(displayMessage)
           })
       } catch (e) {
-        console.error(e)
+        // console.error(e)
+        window.alert('ログインエラーが発生しました。やり直してください。')
       }
     },
     SignInGoogle () {

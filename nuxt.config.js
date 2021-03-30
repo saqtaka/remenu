@@ -58,15 +58,20 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'ja'
+      lang: 'en'
     }
   },
 
   i18n: {
     locales: ['en', 'ja'],
-    defaultLocale: 'ja',
+    defaultLocale: 'en',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      onlyOnRoot: true // recommended
+    },
     vueI18n: {
-      fallbackLocale: 'ja',
+      fallbackLocale: 'en',
       messages: {
         en: {
           hello: 'hello!!',

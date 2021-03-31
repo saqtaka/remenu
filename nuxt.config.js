@@ -112,7 +112,7 @@ export default {
           report_habitCount: 'Habit count',
           report_totalCount: 'Total count',
           minute: 'min',
-          signin_title: 'Remenu Your Account',
+          signin_title: 'Remenu',
           signin_sub: 'Sign In',
           signin_button: 'Sign In',
           signin_forget: 'Forgot your password?',

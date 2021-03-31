@@ -32,7 +32,8 @@
 
 export const state = () => ({
   drawer: true,
-  theme: false
+  theme: false,
+  isProgressLinear: false
 })
 export const mutations = {
   toggleDrawer (state) {
@@ -40,6 +41,9 @@ export const mutations = {
   },
   toggleTheme (state) {
     state.theme = !state.theme
+  },
+  showProgressLinear (state, value) {
+    state.isProgressLinear = value
   }
 }
 export const actions = {
@@ -48,6 +52,9 @@ export const actions = {
   },
   TOGGLE_THEME ({ commit }) {
     commit('toggleTheme')
+  },
+  SHOW_PROGRESSLINEAR ({ commit }, value) {
+    commit('showProgressLinear', value)
   }
 }
 export const getters = {

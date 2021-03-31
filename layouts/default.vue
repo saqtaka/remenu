@@ -60,9 +60,7 @@ export default {
           .then(function (value) {
             self.$i18n.locale = value
           })
-          .catch(function (error) {
-            console.error(error.message)
-          })
+          .catch()
 
         if (this.$route.path === '/signin' || this.$route.path === '/') {
           this.$router.push({ path: '/inbox' })

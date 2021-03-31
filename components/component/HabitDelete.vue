@@ -40,9 +40,7 @@ export default {
         .then(function () {
           self.$router.push({ path: '/habit' })
         })
-        .catch(function (error) {
-          console.error(error)
-        })
+        .catch()
     }
   }
 }

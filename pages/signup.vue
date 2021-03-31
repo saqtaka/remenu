@@ -47,13 +47,19 @@
 import firebase from 'firebase/app'
 import 'firebase/auth'
 
+import { mapActions } from 'vuex'
 import InputEmailAddress from '@/components/basic/account/InputEmailAddress.vue'
 import InputPassword from '@/components/basic/account/InputPassword.vue'
+
+// import { mapState } from 'vuex'
 
 export default {
   components: {
     InputEmailAddress,
     InputPassword
+  },
+  layout () {
+    return 'sign'
   },
   data () {
     return {
@@ -62,6 +68,11 @@ export default {
       valid: true
     }
   },
+  // computed: mapState({
+  //   ...mapState('layout', {
+  //     isProgressLinear: state => state.isProgressLinear
+  //   })
+  // }),
   created () {
     // console.log(this.$route.query.lang)
     if (this.$route.query.lang === 'ja') {
@@ -72,12 +83,15 @@ export default {
     // console.log(this.$i18n.locale)
   },
   methods: {
+    ...mapActions('layout', ['SHOW_PROGRESSLINEAR']),
     SignUp () {
+      this.SHOW_PROGRESSLINEAR(true)
       firebase.auth().createUserWithEmailAndPassword(this.emailAddress, this.password)
         .then((user) => {
           this.$router.push({ path: '/inbox' })
         })
         .catch((error) => {
+          this.SHOW_PROGRESSLINEAR(false)
           console.error(error.code)
           console.error(error.message)
         })

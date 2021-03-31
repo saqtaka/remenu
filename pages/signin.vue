@@ -52,6 +52,7 @@
 // import firebase from 'firebase/app'
 // import 'firebase/auth'
 
+import { mapActions } from 'vuex'
 import InputEmailAddress from '~/components/basic/account/InputEmailAddress.vue'
 import InputPassword from '~/components/basic/account/InputPassword.vue'
 
@@ -61,7 +62,7 @@ export default {
     InputPassword
   },
   layout () {
-    return 'Layout'
+    return 'sign'
   },
   data () {
     return {
@@ -80,13 +81,16 @@ export default {
     // console.log(this.$i18n.locale)
   },
   methods: {
+    ...mapActions('layout', ['SHOW_PROGRESSLINEAR']),
     SignIn () {
       try {
+        this.SHOW_PROGRESSLINEAR(true)
         this.$fire.auth.signInWithEmailAndPassword(this.emailAddress, this.password)
           .then((user) => {
             this.$router.push({ path: '/inbox' })
           })
           .catch((error) => {
+            this.SHOW_PROGRESSLINEAR(false)
             // console.error(error.code)
             // console.error(error.message)
             let displayMessage

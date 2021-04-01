@@ -65,7 +65,7 @@ export default {
     return {
       emailAddress: null,
       password: null,
-      valid: true
+      valid: false
     }
   },
   created () {

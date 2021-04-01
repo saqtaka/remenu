@@ -68,7 +68,7 @@ export default {
     return {
       emailAddress: '',
       password: '',
-      valid: true,
+      valid: false,
       errorMessage: this.$t('error_default')
     }
   },

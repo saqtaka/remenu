@@ -33,7 +33,8 @@
 export const state = () => ({
   drawer: true,
   theme: false,
-  isProgressLinear: false
+  isProgressLinear: false,
+  alertDialogMessage: true
 })
 export const mutations = {
   toggleDrawer (state) {
@@ -44,6 +45,9 @@ export const mutations = {
   },
   showProgressLinear (state, value) {
     state.isProgressLinear = value
+  },
+  alertDialogMessage (state, value) {
+    state.alertDialogMessage = value
   }
 }
 export const actions = {
@@ -55,6 +59,9 @@ export const actions = {
   },
   SHOW_PROGRESSLINEAR ({ commit }, value) {
     commit('showProgressLinear', value)
+  },
+  ALERT_DIALOG_MESSAGE ({ commit }, value) {
+    commit('alertDialogMessage', value)
   }
 }
 export const getters = {

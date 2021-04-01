@@ -105,11 +105,10 @@ export default {
           // var user = result.user
           // ...
         }).catch((error) => {
-          // Handle Errors here.
-          // var errorCode = error.code
-          // var errorMessage = error.message
-          console.error(error.code)
-          console.error(error.message)
+          // console.error(error.code)
+          // console.error(error.message)
+          this.ALERT_DIALOG_MESSAGE(error.message)
+
           // The email of the user's account used.
           // var email = error.email
           // The firebase.auth.AuthCredential type that was used.

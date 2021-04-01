@@ -68,22 +68,16 @@ export default {
       valid: true
     }
   },
-  // computed: mapState({
-  //   ...mapState('layout', {
-  //     isProgressLinear: state => state.isProgressLinear
-  //   })
-  // }),
   created () {
-    // console.log(this.$route.query.lang)
     if (this.$route.query.lang === 'ja') {
       this.$i18n.locale = 'ja-JP'
     } else if (this.$route.query.lang === 'en') {
       this.$i18n.locale = 'en-US'
     }
-    // console.log(this.$i18n.locale)
   },
   methods: {
     ...mapActions('layout', ['SHOW_PROGRESSLINEAR']),
+    ...mapActions('layout', ['ALERT_DIALOG_MESSAGE']),
     SignUp () {
       this.SHOW_PROGRESSLINEAR(true)
       firebase.auth().createUserWithEmailAndPassword(this.emailAddress, this.password)
@@ -92,8 +86,7 @@ export default {
         })
         .catch((error) => {
           this.SHOW_PROGRESSLINEAR(false)
-          console.error(error.code)
-          console.error(error.message)
+          this.ALERT_DIALOG_MESSAGE(error.message)
         })
     },
     SignInGoogle () {

@@ -82,6 +82,7 @@ export default {
   },
   methods: {
     ...mapActions('layout', ['SHOW_PROGRESSLINEAR']),
+    ...mapActions('layout', ['ALERT_DIALOG_MESSAGE']),
     SignIn () {
       try {
         this.SHOW_PROGRESSLINEAR(true)
@@ -93,17 +94,11 @@ export default {
             this.SHOW_PROGRESSLINEAR(false)
             // console.error(error.code)
             // console.error(error.message)
-            let displayMessage
-            if (error.code === 'auth/user-not-found') {
-              displayMessage = 'ユーザーが見つかりませんでした。'
-            } else {
-              displayMessage = this.errorMessage
-            }
-            window.alert(displayMessage)
+            this.ALERT_DIALOG_MESSAGE(error.message)
           })
       } catch (e) {
         // console.error(e)
-        window.alert('ログインエラーが発生しました。やり直してください。')
+        this.ALERT_DIALOG_MESSAGE('ログインエラーが発生しました。やり直してください。')
       }
     },
     SignInGoogle () {

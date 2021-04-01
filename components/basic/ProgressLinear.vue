@@ -1,9 +1,10 @@
 <template>
   <v-progress-linear
-    v-if="isProgressLinear"
-    indeterminate
+    :active="progressLinear"
+    :indeterminate="progressLinear"
     color="secondary"
   />
+  <!-- <div /> -->
 </template>
 
 <script>
@@ -16,10 +17,23 @@ export default {
       default: true
     }
   },
+  data () {
+    return {
+      progressLinear: this.isProgressLinear
+    }
+  },
   computed: mapState({
     ...mapState('layout', {
       isProgressLinear: state => state.isProgressLinear
     })
-  })
+  }),
+  watch: {
+    isProgressLinear (newValue, oldValue) {
+      this.progressLinear = newValue
+    }
+  },
+  created () {
+    this.progressLinear = this.isProgressLinear
+  }
 }
 </script>

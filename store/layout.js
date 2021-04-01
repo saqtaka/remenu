@@ -34,7 +34,7 @@ export const state = () => ({
   drawer: true,
   theme: false,
   isProgressLinear: false,
-  alertDialogMessage: true
+  alertDialogMessage: null
 })
 export const mutations = {
   toggleDrawer (state) {

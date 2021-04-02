@@ -24,12 +24,12 @@
             <div class="text-h6 font-weight-bold text-uppercase mb-5">
               blog
             </div>
-            <div class="d-flex mb-2">
+            <!-- <div class="d-flex mb-2">
               <v-icon color="secondary lighten-1" class="mr-2">
                 {{ mdiPostSvgPath }}
               </v-icon>
               <a href="https://saqtaka.com" class="text-decoration-none secondary--text text--lighten-2">saqtaka.com</a>
-            </div>
+            </div> -->
             <!-- <div class="d-flex mb-2">
               <v-icon color="secondary lighten-1" class="mr-2">
                 {{ mdiPostSvgPath }}

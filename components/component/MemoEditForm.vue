@@ -21,6 +21,7 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 
 import InputMemoContent from '@/components/basic/memo/InputMemoContent.vue'
+import { mapActions } from 'vuex'
 
 export default {
   name: 'NewMemo',
@@ -60,6 +61,7 @@ export default {
     }
   },
   methods: {
+    ...mapActions('layout', ['ALERT_DIALOG_MESSAGE']),
     saveMemo (e) {
       // e.preventDefault()
 
@@ -72,7 +74,7 @@ export default {
           self.$router.push(self.localeRoute({ path: '/memo' }))
         })
         .catch(function (error) {
-          console.error(error)
+          this.ALERT_DIALOG_MESSAGE(error.message)
         })
     }
   }

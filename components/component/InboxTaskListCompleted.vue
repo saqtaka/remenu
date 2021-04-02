@@ -22,6 +22,7 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/firestore'
 
+import { mapActions } from 'vuex'
 export default {
   components: {
     TaskCardCompleted
@@ -93,6 +94,7 @@ export default {
     })
   },
   methods: {
+    ...mapActions('layout', ['ALERT_DIALOG_MESSAGE']),
     selectTask (index) {
       this.selectedIndex = index
 
@@ -117,7 +119,7 @@ export default {
           }
         })
         .catch(function (error) {
-          console.error(error)
+          this.ALERT_DIALOG_MESSAGE(error.message)
         })
 
       this.tasks.splice(this.selectedIndex, 1)

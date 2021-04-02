@@ -18,6 +18,7 @@ import 'firebase/auth'
 import 'firebase/firestore'
 
 import getLocale from '@/javascript/GetLocale'
+import { mapActions } from 'vuex'
 
 export default {
   data () {
@@ -41,11 +42,12 @@ export default {
           self.locale = value
         })
         .catch(function (error) {
-          console.error(error)
+          this.ALERT_DIALOG_MESSAGE(error)
         })
     })
   },
   methods: {
+    ...mapActions('layout', ['ALERT_DIALOG_MESSAGE']),
     selectChange () {
       this.$i18n.locale = this.locale
 
@@ -58,10 +60,10 @@ export default {
           locale: this.locale
         }, { merge: true })
         .then(function (docRef) {
-          console.log('success')
+          this.ALERT_DIALOG_MESSAGE('success')
         })
         .catch(function (error) {
-          console.error(error.message)
+          this.ALERT_DIALOG_MESSAGE(error.message)
         })
     }
   }

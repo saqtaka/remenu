@@ -37,6 +37,8 @@ import ThenForTrigger1 from '@/components/basic/habit/InputThenForTrigger1.vue'
 import IfForRecovery1 from '@/components/basic/habit/InputIfForRecovery1.vue'
 import ThenForRecovery1 from '@/components/basic/habit/InputThenForRecovery1.vue'
 
+import { mapActions } from 'vuex'
+
 export default {
   name: 'NewHabit',
   components: {
@@ -86,6 +88,7 @@ export default {
     }
   },
   methods: {
+    ...mapActions('layout', ['ALERT_DIALOG_MESSAGE']),
     saveHabit (e) {
       // e.preventDefault()
 
@@ -102,7 +105,7 @@ export default {
           self.$router.push(self.localeRoute({ name: 'habit' }))
         })
         .catch(function (error) {
-          console.error(error)
+          this.ALERT_DIALOG_MESSAGE(error.message)
         })
     }
   }

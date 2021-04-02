@@ -11,6 +11,8 @@ import DeleteButton from '@/components/basic/DeleteButton.vue'
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 
+import { mapActions } from 'vuex'
+
 export default {
   name: 'TaskDelete',
   components: {
@@ -31,6 +33,7 @@ export default {
     }
   },
   methods: {
+    ...mapActions('layout', ['ALERT_DIALOG_MESSAGE']),
     deleteTask () {
       const self = this
       // firestore update
@@ -41,7 +44,8 @@ export default {
           self.$router.push(self.localeRoute({ path: '/task' }))
         })
         .catch(function (error) {
-          console.error(error)
+          // console.error(error)
+          this.ALERT_DIALOG_MESSAGE(error.message)
         })
     }
   }

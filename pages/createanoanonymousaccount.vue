@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import firebase from 'firebase/app'
 import 'firebase/auth'
 
@@ -17,10 +18,11 @@ export default {
       })
       .catch((error) => {
         // const errorCode = error.code
-        // const errorMessage = error.message
-        console.error(error.message)
-        // ...
+        this.ALERT_DIALOG_MESSAGE(error.message)
       })
+  },
+  methods: {
+    ...mapActions('layout', ['ALERT_DIALOG_MESSAGE'])
   }
 }
 </script>

@@ -125,7 +125,7 @@ export default {
     goToEdit (index) {
       this.selectedIndex = index
 
-      this.$router.push({ path: `task/${this.tasks[index].id}` })
+      this.$router.push(this.localeRoute({ path: `task/${this.tasks[index].id}` }))
     },
     displayTitle (text) {
       return text.split(/\n/)[0]

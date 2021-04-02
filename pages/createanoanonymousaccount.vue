@@ -13,7 +13,7 @@ export default {
     firebase.auth().signInAnonymously()
       .then(() => {
         // Signed in..
-        this.$router.push('/habit')
+        this.$router.push(this.localeRoute({ path: '/habit' }))
       })
       .catch((error) => {
         // const errorCode = error.code

@@ -165,7 +165,7 @@ export default {
     logOut () {
       // window.localStorage.setItem('authenticated', false)
       firebase.auth().signOut()
-      this.$router.push('/signin')
+      this.$router.push(this.localeRoute({ path: '/signin' }))
     },
     addSection () {
       this.dialog = true

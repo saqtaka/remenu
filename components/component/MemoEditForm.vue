@@ -69,7 +69,7 @@ export default {
         memo: self.inputMemo
       })
         .then(function () {
-          self.$router.push({ path: '/memo' })
+          self.$router.push(self.localeRoute({ path: '/memo' }))
         })
         .catch(function (error) {
           console.error(error)

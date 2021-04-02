@@ -82,7 +82,7 @@ export default {
       this.SHOW_PROGRESSLINEAR(true)
       firebase.auth().createUserWithEmailAndPassword(this.emailAddress, this.password)
         .then((user) => {
-          this.$router.push({ path: '/inbox' })
+          this.$router.push(this.localeRoute({ path: '/inbox' }))
         })
         .catch((error) => {
           this.SHOW_PROGRESSLINEAR(false)

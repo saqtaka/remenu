@@ -99,7 +99,7 @@ export default {
         thenForRecovery1: self.selectedHabit.thenForRecovery1 ? self.selectedHabit.thenForRecovery1 : ''
       })
         .then(function () {
-          self.$router.push(this.localeRoute({ name: 'habit' }))
+          self.$router.push(self.localeRoute({ name: 'habit' }))
         })
         .catch(function (error) {
           console.error(error)

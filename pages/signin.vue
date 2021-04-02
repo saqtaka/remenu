@@ -88,7 +88,7 @@ export default {
         this.SHOW_PROGRESSLINEAR(true)
         this.$fire.auth.signInWithEmailAndPassword(this.emailAddress, this.password)
           .then((user) => {
-            this.$router.push({ path: '/inbox' })
+            this.$router.push(this.localeRoute({ name: 'inbox' }))
           })
           .catch((error) => {
             this.SHOW_PROGRESSLINEAR(false)

@@ -39,7 +39,9 @@ export default {
     selectHabit (index) {
       this.selectedIndex = index
 
-      this.$router.push({ path: `habit/${this.habits[index].id}` })
+      // this.$router.push(this.localeRoute({ path: `habit/${this.habits[index].id}` }))
+      // this.$router.push(this.localeRoute({ name: 'habit', params: { habitid: index } }))
+      this.$router.push(this.localeRoute({ path: `/habit/${this.habits[index].id}` }))
     },
     displayTitle (text) {
       return text.split(/\n/)[0]

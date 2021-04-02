@@ -67,7 +67,7 @@ export default {
     defaultLocale: 'en',
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: 'i18n_redirected',
+      cookieKey: 'remenu_lang',
       onlyOnRoot: true // recommended
     },
     vueI18n: {

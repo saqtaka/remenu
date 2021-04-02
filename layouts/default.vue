@@ -1,11 +1,11 @@
 <template>
   <v-app>
-    <Header v-if="isLogin" />
-    <Sidebar v-if="isLogin" />
+    <Header />
+    <Sidebar />
     <v-main class="content mx-0 mx-md-2">
       <nuxt />
     </v-main>
-    <Footer v-if="isLogin" />
+    <Footer />
   </v-app>
 </template>
 
@@ -15,7 +15,7 @@ import Header from '~/components/component/Header'
 import Sidebar from '~/components/component/Sidebar'
 import Footer from '~/components/component/Footer'
 
-import getLocale from '~/javascript/GetLocale'
+// import getLocale from '~/javascript/GetLocale'
 // import initializeApp from '~/javascript/FBInitialize.js'
 import 'firebase/auth'
 
@@ -55,16 +55,16 @@ export default {
       if (user) {
         this.isLogin = true
 
-        const self = this
-        getLocale(firebase.auth().currentUser.uid)
-          .then(function (value) {
-            self.$i18n.locale = value
-          })
-          .catch()
+        // const self = this
+        // getLocale(firebase.auth().currentUser.uid)
+        //   .then(function (value) {
+        //     self.$i18n.locale = value
+        //   })
+        //   .catch()
 
-        if (this.$route.path === '/signin' || this.$route.path === '/') {
-          this.$router.push({ path: '/inbox' })
-        }
+        // if (this.$route.path === '/signin' || this.$route.path === '/') {
+        //   this.$router.push({ path: '/inbox' })
+        // }
       } else {
         this.isLogin = false
 

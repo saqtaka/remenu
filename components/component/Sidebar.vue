@@ -115,7 +115,8 @@ import { mapActions, mapState } from 'vuex'
 import firebase from 'firebase/app'
 import 'firebase/auth'
 
-import { mdiHome, mdiCheck, mdiCached, mdiBookOpen, mdiClipboardText, mdiAccountCircleOutline, mdiInformationOutline, mdiExitToApp } from '@mdi/js'
+import { mdiHome, mdiCheck, mdiCached, mdiBookOpen, mdiClipboardText, mdiInformationOutline, mdiExitToApp } from '@mdi/js'
+// import { mdiHome, mdiCheck, mdiCached, mdiBookOpen, mdiClipboardText, mdiAccountCircleOutline, mdiInformationOutline, mdiExitToApp } from '@mdi/js'
 
 export default {
   props: {
@@ -145,13 +146,13 @@ export default {
     },
     items () {
       return [
-        { title: this.$t('inbox'), icon: mdiHome, link: '/inbox' },
-        { title: this.$t('task'), icon: mdiCheck, link: '/task' },
-        { title: this.$t('habit'), icon: mdiCached, link: '/habit' },
-        { title: this.$t('memo'), icon: mdiBookOpen, link: '/memo' },
-        { title: this.$t('report'), icon: mdiClipboardText, link: '/report' },
-        { title: this.$t('setting'), icon: mdiAccountCircleOutline, link: '/setting' },
-        { title: this.$t('license'), icon: mdiInformationOutline, link: '/license' },
+        { title: this.$t('inbox'), icon: mdiHome, link: this.localeRoute('inbox') },
+        { title: this.$t('task'), icon: mdiCheck, link: this.localeRoute('task') },
+        { title: this.$t('habit'), icon: mdiCached, link: this.localeRoute('habit') },
+        { title: this.$t('memo'), icon: mdiBookOpen, link: this.localeRoute('memo') },
+        { title: this.$t('report'), icon: mdiClipboardText, link: this.localeRoute('report') },
+        // { title: this.$t('setting'), icon: mdiAccountCircleOutline, link: '/setting' },
+        { title: this.$t('license'), icon: mdiInformationOutline, link: this.localeRoute('license') },
         { divider: true },
         { title: 'LOGOUT', icon: mdiExitToApp, action: () => this.logOut() }
       ]

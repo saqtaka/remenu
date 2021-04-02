@@ -18,12 +18,12 @@
         </v-btn>
       </div> -->
       <div class="mx-1">
-        <v-btn color="primary" to="/signup">
+        <v-btn color="primary" @click="toSignUp">
           登録
         </v-btn>
       </div>
       <div class="mx-1">
-        <v-btn color="primary" to="/signin">
+        <v-btn color="primary" @click="toSignIn">
           ログイン
         </v-btn>
       </div>
@@ -44,6 +44,12 @@ export default {
     }
   },
   methods: {
+    toSignUp () {
+      this.$router.push(this.localeRoute({ name: 'signup' }))
+    },
+    toSignIn () {
+      this.$router.push(this.localeRoute({ name: 'signin' }))
+    },
     clickLang () {
       if (this.$i18n.locale === 'en') {
         this.$i18n.locale = 'ja'

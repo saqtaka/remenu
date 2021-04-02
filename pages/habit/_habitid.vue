@@ -31,6 +31,12 @@ import HabitDelete from '@/components/component/HabitDelete.vue'
 
 export default {
   name: 'HabitEditorPage',
+  // nuxtI18n: {
+  //   paths: {
+  //     en: '/habit/:habitid',
+  //     ja: '/habit/:habitid'
+  //   }
+  // },
   components: {
     HabitEditForm,
     HabitDelete

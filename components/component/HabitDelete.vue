@@ -38,7 +38,7 @@ export default {
         completed: true
       })
         .then(function () {
-          self.$router.push({ path: '/habit' })
+          self.$router.push(this.localeRoute({ name: 'habit' }))
         })
         .catch()
     }

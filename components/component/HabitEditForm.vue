@@ -105,7 +105,7 @@ export default {
           self.$router.push(self.localeRoute({ name: 'habit' }))
         })
         .catch(function (error) {
-          this.ALERT_DIALOG_MESSAGE(error.message)
+          self.ALERT_DIALOG_MESSAGE(error.message)
         })
     }
   }

@@ -42,7 +42,7 @@ export default {
           self.locale = value
         })
         .catch(function (error) {
-          this.ALERT_DIALOG_MESSAGE(error)
+          self.ALERT_DIALOG_MESSAGE(error)
         })
     })
   },
@@ -60,10 +60,10 @@ export default {
           locale: this.locale
         }, { merge: true })
         .then(function (docRef) {
-          this.ALERT_DIALOG_MESSAGE('success')
+          self.ALERT_DIALOG_MESSAGE('success')
         })
         .catch(function (error) {
-          this.ALERT_DIALOG_MESSAGE(error.message)
+          self.ALERT_DIALOG_MESSAGE(error.message)
         })
     }
   }

@@ -132,9 +132,9 @@ export default {
           FBUpsertDailyReport(firebase.auth().currentUser.uid, date, selectedHabitId)
 
           if (selectedHabitId) {
-            self.SNACKBAR_MESSAGE('習慣追加中')
             FBAddHabitTrigger(selectedHabitId, selectedCount, date)
             // self.SNACKBAR_MESSAGE(null)
+            self.SNACKBAR_MESSAGE('習慣追加中')
           }
         })
         .catch(function (error) {

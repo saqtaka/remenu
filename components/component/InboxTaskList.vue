@@ -97,6 +97,7 @@ export default {
   },
   methods: {
     ...mapActions('layout', ['ALERT_DIALOG_MESSAGE']),
+    ...mapActions('layout', ['SNACKBAR_MESSAGE']),
     selectTask (index) {
       this.selectedIndex = index
 
@@ -105,7 +106,7 @@ export default {
       const selectedCount = this.tasks[this.selectedIndex].count
 
       // firestore update
-      // let self = this;
+      const self = this
       firebase
         .firestore().collection('tasks')
         .doc(this.tasks[this.selectedIndex].id)
@@ -118,10 +119,11 @@ export default {
 
           if (selectedHabitId) {
             FBAddHabitTrigger(selectedHabitId, selectedCount, date)
+            self.SNACKBAR_MESSAGE('習慣追加中')
           }
         })
         .catch(function (error) {
-          this.ALERT_DIALOG_MESSAGE(error.message)
+          self.ALERT_DIALOG_MESSAGE(error.message)
         })
 
       this.tasks.splice(this.selectedIndex, 1)

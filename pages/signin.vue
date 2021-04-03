@@ -73,11 +73,16 @@ export default {
     }
   },
   created (e) {
-    if (this.$route.query.lang === 'ja') {
-      this.$i18n.locale = 'ja-JP'
-    } else if (this.$route.query.lang === 'en') {
-      this.$i18n.locale = 'en-US'
-    }
+    this.$fire.auth.onAuthStateChanged((user) => {
+      if (user) {
+        this.$router.push(this.localeRoute({ name: 'inbox' }))
+      }
+    })
+    // if (this.$route.query.lang === 'ja') {
+    //   this.$i18n.locale = 'ja-JP'
+    // } else if (this.$route.query.lang === 'en') {
+    //   this.$i18n.locale = 'en-US'
+    // }
     // console.log(this.$i18n.locale)
   },
   methods: {

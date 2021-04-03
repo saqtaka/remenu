@@ -1,7 +1,7 @@
 <template>
   <div id="taskCount">
     <div v-if="tasks.length" class="mt-1 mr-1 pt-1 pr-1 text-right">
-      <span class="primary--text">{{ this.totalTime }}{{ $t('minute') }}</span>
+      <span class="primary--text">{{ totalTime }}{{ $t('minute') }}</span>
     </div>
     <TaskCard
       v-for="(task, index) in tasks"
@@ -109,6 +109,7 @@ export default {
   },
   methods: {
     ...mapActions('layout', ['ALERT_DIALOG_MESSAGE']),
+    ...mapActions('layout', ['SNACKBAR_MESSAGE']),
     selectTask (index) {
       this.selectedIndex = index
 
@@ -118,6 +119,7 @@ export default {
 
       // firestore update
       // let self = this;
+      const self = this
       firebase
         .firestore()
         .collection('tasks')
@@ -130,11 +132,13 @@ export default {
           FBUpsertDailyReport(firebase.auth().currentUser.uid, date, selectedHabitId)
 
           if (selectedHabitId) {
+            self.SNACKBAR_MESSAGE('習慣追加中')
             FBAddHabitTrigger(selectedHabitId, selectedCount, date)
+            // self.SNACKBAR_MESSAGE(null)
           }
         })
         .catch(function (error) {
-          this.ALERT_DIALOG_MESSAGE(error.message)
+          self.ALERT_DIALOG_MESSAGE(error.message)
         })
 
       this.tasks.splice(this.selectedIndex, 1)

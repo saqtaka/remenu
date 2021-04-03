@@ -34,7 +34,8 @@ export const state = () => ({
   drawer: true,
   theme: false,
   isProgressLinear: false,
-  alertDialogMessage: null
+  alertDialogMessage: null,
+  snackbarMessage: null
 })
 export const mutations = {
   toggleDrawer (state) {
@@ -48,6 +49,9 @@ export const mutations = {
   },
   alertDialogMessage (state, value) {
     state.alertDialogMessage = value
+  },
+  snackbarMessage (state, value) {
+    state.snackbarMessage = value
   }
 }
 export const actions = {
@@ -62,6 +66,9 @@ export const actions = {
   },
   ALERT_DIALOG_MESSAGE ({ commit }, value) {
     commit('alertDialogMessage', value)
+  },
+  SNACKBAR_MESSAGE ({ commit }, value) {
+    commit('snackbarMessage', value)
   }
 }
 export const getters = {

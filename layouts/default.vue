@@ -6,11 +6,15 @@
       <nuxt />
     </v-main>
     <Footer />
+    <AlertDialog />
+    <TheSnackbar />
   </v-app>
 </template>
 
 <script>
 import firebase from 'firebase/app'
+import AlertDialog from '@/components/basic/AlertDialog.vue'
+import TheSnackbar from '@/components/basic/TheSnackbar.vue'
 import Header from '~/components/component/Header'
 import Sidebar from '~/components/component/Sidebar'
 import Footer from '~/components/component/Footer'
@@ -25,7 +29,9 @@ export default {
     {
       Footer,
       Header,
-      Sidebar
+      Sidebar,
+      AlertDialog,
+      TheSnackbar
     },
   data () {
     return {

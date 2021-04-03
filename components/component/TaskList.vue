@@ -129,6 +129,7 @@ export default {
         })
         .then(function () {
           const date = new Date()
+          date.setDate(date.getDate() + 1)
           FBUpsertDailyReport(firebase.auth().currentUser.uid, date, selectedHabitId)
 
           if (selectedHabitId) {

@@ -1,12 +1,12 @@
 <template>
   <div class="text-center">
-    <v-btn
+    <!-- <v-btn
       dark
       color="orange darken-2"
       @click="snackbar = true"
     >
       Open Snackbar
-    </v-btn>
+    </v-btn> -->
 
     <v-snackbar
       v-model="snackbar"

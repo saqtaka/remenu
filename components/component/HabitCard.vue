@@ -4,11 +4,6 @@
     rounded="xl"
     @click="clearButton"
   >
-    <!-- <v-card-title>
-      <div class="body-1">
-        {{ habitData.title }}
-      </div>
-    </v-card-title> -->
 
     <v-card-title class="pa-1">
       <v-container class="pa-0 ma-0">

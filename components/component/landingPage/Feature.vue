@@ -58,10 +58,10 @@ export default {
         title: this.$t('feature2_title'),
         description: this.$t('feature2_detail')
       }, {
-        icon: 'mdi-email',
-        title: this.$t('feature3_title'),
-        description: this.$t('feature3_detail')
-      }, {
+      //   icon: 'mdi-email',
+      //   title: this.$t('feature3_title'),
+      //   description: this.$t('feature3_detail')
+      // }, {
         icon: 'mdi-chart-box-outline',
         title: this.$t('feature4_title'),
         description: this.$t('feature4_detail')

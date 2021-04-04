@@ -220,7 +220,7 @@ export default {
           price_feature5: 'メモ機能',
           price_button: '登録する',
           feature_title: '機能',
-          feature_sub1: '習慣化を助ける5つの機能',
+          feature_sub1: '習慣化を助ける4つの機能',
           feature_sub2: '',
           feature1_title: 'タスクと習慣の同時管理機能',
           feature1_detail: 'タスク管理アプリや習慣管理アプリはたくさんありますが、両方を管理できるアプリケーションはあまりありません。Remenuなら両方を同時に管理できます。',

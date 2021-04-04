@@ -21,6 +21,7 @@
 </template>
 
 <script>
+import updateHabit from '../mixins/updateHabit'
 import NewTask from '~/components/component/InboxNewTask.vue'
 import InboxTaskList from '~/components/component/InboxTaskList.vue'
 import InboxTaskListCompleted from '~/components/component/InboxTaskListCompleted.vue'
@@ -31,7 +32,8 @@ export default {
     NewTask,
     InboxTaskList,
     InboxTaskListCompleted
-  }
+  },
+  mixins: [updateHabit]
   // layout () {
   //   return 'Layout'
   // }

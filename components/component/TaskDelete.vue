@@ -41,7 +41,8 @@ export default {
         deleted: true
       })
         .then(function () {
-          self.$router.push(self.localeRoute({ path: '/task' }))
+          // self.$router.push(self.localeRoute({ path: '/task' }))
+          self.$router.go(-1)
         })
         .catch(function (error) {
           // console.error(error)

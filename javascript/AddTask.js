@@ -1,3 +1,4 @@
+// こっちの方が新しい
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 

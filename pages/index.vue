@@ -22,6 +22,7 @@ import Hero from '~/components/component/landingPage/Hero.vue'
 import Feature from '~/components/component/landingPage/Feature.vue'
 import Pricing from '~/components/component/landingPage/Pricing.vue'
 import TopView from '~/components/component/TopView.vue'
+
 export default {
   components: {
     // Logo,

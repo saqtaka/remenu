@@ -4,7 +4,6 @@
     rounded="xl"
     @click="clearButton"
   >
-
     <v-card-title class="pa-1">
       <v-container class="pa-0 ma-0">
         <v-row align="center" class="pa-0 ma-0">

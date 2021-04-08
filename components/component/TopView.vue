@@ -12,7 +12,7 @@
             <v-sheet
               outlined
               elevation="1"
-              rounded="xl"
+              rounded="lg"
               class="pa-8"
             >
               <div>

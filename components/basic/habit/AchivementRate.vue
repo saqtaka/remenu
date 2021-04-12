@@ -21,14 +21,23 @@ export default {
   },
   created () {
     const self = this
+    // firebase
+    //   .firestore()
+    //   .collection('habitLatestLists')
+    //   .doc(this.habitIdProp)
+    //   .get()
+    //   .then(function (doc) {
+    //     self.achivementRate = doc.data().achivementRate
+    //   })
+
     firebase
       .firestore()
       .collection('habitLatestLists')
       .doc(this.habitIdProp)
-      .get()
-      .then(function (doc) {
+      .onSnapshot((doc) => {
         self.achivementRate = doc.data().achivementRate
       })
+    //
   }
 }
 </script>

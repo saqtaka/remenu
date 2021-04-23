@@ -3,6 +3,7 @@
     class="main-header"
     height="64"
     fixed
+    app
   >
     <v-btn icon class="mx-1" @click.stop="TOGGLE_DRAWER">
       <template v-if="DRAWER_STATE">

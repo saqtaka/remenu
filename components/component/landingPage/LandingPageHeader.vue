@@ -3,6 +3,7 @@
     <v-app-bar
       color="white"
       fixed
+      app
     >
       <!-- <v-app-bar-nav-icon /> -->
       <img src="/v-logo-small.png" alt="" height="30" class="mr-1">

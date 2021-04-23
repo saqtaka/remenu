@@ -20,3 +20,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+@import '@/styles/app.scss';
+
+// .v-main__wrap {
+//   padding: 50px 0px 0px;
+// }
+</style>

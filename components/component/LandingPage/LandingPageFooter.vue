@@ -3,6 +3,11 @@
     <v-footer color="transparent">
       <v-container class="py-5">
         <v-row>
+          <v-col cols="12">
+            <v-divider class="my-4" />
+          </v-col>
+        </v-row>
+        <v-row>
           <v-col cols="12" md="4">
             <div class="text-h6 font-weight-bold text-uppercase mb-5">
               Account
@@ -73,12 +78,12 @@
             </div>
           </v-col>
         </v-row>
-        <v-row>
+        <!-- <v-row>
           <v-col cols="12">
             <v-divider class="my-4" />
             <a href="http://www.freepik.com">Top image designed by vectorjuice / Freepik</a>
           </v-col>
-        </v-row>
+        </v-row> -->
       </v-container>
     </v-footer>
   </div>

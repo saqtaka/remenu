@@ -87,6 +87,11 @@ export default {
       deep: true
     }
   },
+  created () {
+    if (this.$route.query.if) {
+      this.selectedHabit.ifForTrigger1 = this.$route.params.if
+    }
+  },
   methods: {
     ...mapActions('layout', ['ALERT_DIALOG_MESSAGE']),
     saveHabit (e) {

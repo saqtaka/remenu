@@ -15,7 +15,6 @@ export default {
   methods: {
     buttonClick () {
       this.flag = true
-
       const self = this
       this.sleep(1, function () {
         self.flag = false

@@ -100,7 +100,7 @@ body {
   }
 }
 
-.v-main__wrap {
-  padding: 70px $content-padding $content-padding;
-}
+// .v-main__wrap {
+//   padding: 70px $content-padding $content-padding;
+// }
 </style>

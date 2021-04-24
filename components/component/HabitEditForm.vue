@@ -38,6 +38,7 @@ import ThenForTrigger1 from '@/components/basic/habit/InputThenForTrigger1.vue'
 // import ThenForRecovery1 from '@/components/basic/habit/InputThenForRecovery1.vue'
 
 import { mapActions } from 'vuex'
+import FBAddTask from '@/javascript/FBTask.js'
 
 export default {
   name: 'NewHabit',
@@ -91,9 +92,9 @@ export default {
   },
   created () {
     if (this.$route.query.if) {
+      this.selectedHabit.title = this.$route.query.if + this.$route.query.then
       this.selectedHabit.ifForTrigger1 = this.$route.query.if
       this.selectedHabit.thenForTrigger1 = this.$route.query.then
-      console.log(this.selectedHabit.ifForTrigger1)
     }
   },
   methods: {
@@ -129,6 +130,13 @@ export default {
           uid: firebase.auth().currentUser ? firebase.auth().currentUser.uid : 'nobody',
           completed: false
         })
+          .then(function (doc) {
+            FBAddTask(self.selectedHabit.title, doc.id)
+            self.$router.push(self.localeRoute({ name: 'habit' }))
+          })
+          .catch(function (error) {
+            self.ALERT_DIALOG_MESSAGE(error.message)
+          })
       }
     }
   }

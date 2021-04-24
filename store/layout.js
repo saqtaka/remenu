@@ -31,7 +31,7 @@
 // }
 
 export const state = () => ({
-  drawer: true,
+  drawer: false,
   theme: false,
   isProgressLinear: false,
   alertDialogMessage: null,

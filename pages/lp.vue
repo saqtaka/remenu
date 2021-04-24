@@ -32,18 +32,27 @@
             <Pricing />
           </div>
         </v-col> -->
-        <v-col v-for="item in items" :key="item.if" cols="12" sm="6" md="4">
-          <v-card class="mx-2" height="180" rounded="xl">
-            <div class="pt-10 px-10">
-              <v-icon>{{ item.ifIcon }}</v-icon>
-              {{ item.if }}
-            </div>
-            <div class="pt-3 px-10">
-              <v-icon>{{ item.thenIcon }}</v-icon>
-              {{ item.then }}
-            </div>
+        <v-col
+          v-for="item in items"
+          :key="item.if"
+          cols="12"
+          sm="6"
+          md="4"
+          class=""
+        >
+          <v-card class="mx-2" height="200" rounded="xl">
+            <v-sheet height="130">
+              <div class="pt-10 px-10">
+                <v-icon>{{ item.ifIcon }}</v-icon>
+                {{ item.if }}
+              </div>
+              <div class="pt-3 px-10">
+                <v-icon>{{ item.thenIcon }}</v-icon>
+                {{ item.then }}
+              </div>
+            </v-sheet>
             <div class="pt-3 px-10 d-flex flex-row-reverse">
-              <v-btn color="primary" @click="goLink(item.if, item.then)">
+              <v-btn color="primary" class="mt-auto" @click="goLink(item.if, item.then)">
                 習慣を編集する
               </v-btn>
             </div>
@@ -58,6 +67,9 @@
 // import Logo from '~/components/Logo.vue'
 // import VuetifyLogo from '~/components/VuetifyLogo.vue'
 import { mdiWeatherSunny, mdiHuman } from '@mdi/js'
+import firebase from 'firebase/app'
+import 'firebase/auth'
+
 import Hero2 from '~/components/component/landingPage/Hero2.vue'
 // import Feature from '~/components/component/landingPage/Feature.vue'
 // import Pricing from '~/components/component/landingPage/Pricing.vue'
@@ -78,20 +90,46 @@ export default {
   data () {
     return {
       mdiWeatherSunnySvgPath: mdiWeatherSunny,
-      mdiHumanSvgPath: mdiHuman
+      mdiHumanSvgPath: mdiHuman,
+      isLogin: false
     }
   },
   computed: {
     items () {
       return [
         { if: '朝起きたら', ifIcon: mdiWeatherSunny, then: 'ストレッチする', thenIcon: mdiHuman },
-        { if: 'asa', ifIcon: mdiWeatherSunny, then: 'stre', thenIcon: mdiHuman }
+        { if: '学校から帰ってきたら', ifIcon: mdiWeatherSunny, then: '部屋を片づける', thenIcon: mdiHuman },
+        { if: 'お昼休憩に', ifIcon: mdiWeatherSunny, then: 'メールの返信をする', thenIcon: mdiHuman },
+        { if: '子供が寝たら', ifIcon: mdiWeatherSunny, then: '勉強する', thenIcon: mdiHuman },
+        { if: '会社から帰ってきたら', ifIcon: mdiWeatherSunny, then: '腕立て伏せをする', thenIcon: mdiHuman },
+        { if: '寝る前に', ifIcon: mdiWeatherSunny, then: '英単語を覚える', thenIcon: mdiHuman }
       ]
     }
   },
+  created () {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.isLogin = true
+      } else {
+        this.isLogin = false
+      }
+    })
+  },
   methods: {
     goLink (pram1, pram2) {
-      this.$router.push(this.localeRoute({ path: '/habit/new', query: { if: pram1, then: pram2 } }))
+      if (this.isLogin) {
+        this.$router.push(this.localeRoute({ path: '/habit/new', query: { if: pram1, then: pram2 } }))
+      } else {
+        firebase.auth().signInAnonymously()
+          .then(() => {
+            // Signed in..
+            this.$router.push(this.localeRoute({ path: '/habit/new', query: { if: pram1, then: pram2 } }))
+          })
+          .catch((error) => {
+            // const errorCode = error.code
+            this.ALERT_DIALOG_MESSAGE(error.message)
+          })
+      }
     }
   }
 }

@@ -2,7 +2,7 @@
 
 export default {
   target: 'static', // default is 'server'
-  mode: 'spa',
+  ssr: 'false',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - Remenu',

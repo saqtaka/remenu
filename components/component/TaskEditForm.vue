@@ -22,8 +22,6 @@
 import firebase from 'firebase/app'
 import BasicButton from '~/components/basic/BasicButton.vue'
 import 'firebase/firestore'
-// import $ from 'jquery'
-// import 'jquery-ui/ui/widgets/datepicker'
 
 import InputTaskName from '~/components/basic/task/InputTaskName.vue'
 import InputTaskMemo from '~/components/basic/task/InputTaskMemo.vue'
@@ -158,10 +156,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-    /* textarea {
-        width: 80%;
-        height: 250px;
-    } */
-</style>

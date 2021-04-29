@@ -16,6 +16,7 @@
         <v-btn
           text
           color="deep-purple accent-4"
+          to="https://memo.portability.info/post/psychology/if-them-plans/"
         >
           if thenプランニングについて
         </v-btn>

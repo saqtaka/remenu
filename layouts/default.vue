@@ -19,8 +19,6 @@ import Header from '~/components/component/Header'
 import Sidebar from '~/components/component/Sidebar'
 import Footer from '~/components/component/Footer'
 
-// import getLocale from '~/javascript/GetLocale'
-// import initializeApp from '~/javascript/FBInitialize.js'
 import 'firebase/auth'
 
 export default {

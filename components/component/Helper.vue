@@ -97,5 +97,3 @@ export default {
   }
 }
 </script>
-
-<style src="./Helper.scss" lang="scss"></style>

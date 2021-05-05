@@ -1,14 +1,16 @@
 <template>
   <div>
     <v-app-bar
+      id="app-bar-landing"
       color="white"
       fixed
-      app
     >
       <!-- <v-app-bar-nav-icon /> -->
       <img src="/v-logo-small.png" alt="" height="30" class="mr-1">
       <v-toolbar-title>
-        Remenu
+        <div class="white--text">
+          Remenu
+        </div>
       </v-toolbar-title>
 
       <v-spacer />
@@ -24,8 +26,10 @@
         </v-btn>
       </div>
       <div class="mx-1">
-        <v-btn color="primary" @click="toSignIn">
-          ログイン
+        <v-btn id="btn-transparent" @click="toSignIn">
+          <div class="white--text">
+            ログイン
+          </div>
         </v-btn>
       </div>
     </v-app-bar>
@@ -64,3 +68,15 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+#app-bar-landing {
+  background-color: rgba(0,0,255,0) !important;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 20%);
+}
+
+#btn-transparent {
+  background-color: rgba(0,0,255,0) !important;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 20%);
+}
+</style>

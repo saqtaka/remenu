@@ -20,6 +20,7 @@ export default {
     ],
     script: [
       {
+        hid: 'clarity',
         type: 'text/javascript',
         innerHTML: `(function(c,l,a,r,i,t,y){
                       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -29,6 +30,7 @@ export default {
       },
       { src: 'https://www.googletagmanager.com/gtag/js?id=G-NKKF1WFDXE', async: true },
       {
+        hid: 'gtag',
         type: 'text/javascript',
         innerHTML: `window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
@@ -36,7 +38,11 @@ export default {
                   
                     gtag('config', 'G-NKKF1WFDXE');`
       }
-    ]
+    ],
+    __dangerouslyDisableSanitizersByTagID: {
+      clarity: ['innerHTML'],
+      gtag: ['innerHTML']
+    }
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

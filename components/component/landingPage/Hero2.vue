@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-img
-      :src="require('@/assets/images/sunrise-photos-5AMSZcgN_cM-unsplash.jpg')"
+      :src="require('@/assets/images/denys-nevozhai-guNIjIuUcgY-unsplash.jpg')"
     />
   </div>
 </template>

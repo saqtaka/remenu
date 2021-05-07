@@ -76,7 +76,7 @@ export default {
 }
 
 #btn-transparent {
-  background-color: rgba(0,0,255,0) !important;
+  background-color: rgba(0,0,255,0.5) !important;
   box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 20%);
 }
 </style>

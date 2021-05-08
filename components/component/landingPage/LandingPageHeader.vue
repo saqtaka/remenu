@@ -15,11 +15,6 @@
 
       <v-spacer />
 
-      <!-- <div class="mx-1">
-        <v-btn color="primary" @click="clickLang">
-          {{ lang }}
-        </v-btn>
-      </div> -->
       <div class="mx-1">
         <v-btn color="primary" @click="toSignUp">
           登録

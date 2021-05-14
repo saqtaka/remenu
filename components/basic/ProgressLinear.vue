@@ -4,7 +4,6 @@
     :indeterminate="progressLinear"
     color="secondary"
   />
-  <!-- <div /> -->
 </template>
 
 <script>

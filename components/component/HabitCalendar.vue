@@ -40,7 +40,6 @@ export default {
         .doc(this.habitIdProp)
         .onSnapshot((doc) => {
           self.dates = doc.data().latestList.map(function (value) {
-            // console.log(dayjs(new Date(value.toDate())).format('YYYY-MM-DD'))
             return dayjs(new Date(value.toDate())).format('YYYY-MM-DD')
           })
         })
